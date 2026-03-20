@@ -1,106 +1,30 @@
 name: Publish Release
 
-# Triggered manually or by a repository_dispatch from the private build repo
+# This workflow is triggered by the private linus-ai repo after a successful
+# release build. The private repo holds PUBLIC_REPO_TOKEN and pushes binaries
+# here directly — no secrets are needed in this public repo.
+#
+# workflow_dispatch is kept for manual re-runs by maintainers only.
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Release version (e.g. 2.2.1)'
+        description: 'Release version to re-publish (e.g. 2.2.1)'
         required: true
         type: string
-      source_tag:
-        description: 'Source tag to pull from (e.g. v2.2.1)'
-        required: true
-        type: string
-  repository_dispatch:
-    types: [new-release]
 
 permissions:
   contents: write
 
-env:
-  SOURCE_REPO: LINUS-AI-PRO/linus-ai
-
 jobs:
-  publish:
-    name: Mirror release to public repo
+  # This job exists only for manual re-runs triggered by maintainers.
+  # Normal releases are pushed directly by the private repo's publish-public job.
+  republish:
+    name: Re-publish release (manual)
     runs-on: ubuntu-22.04
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Resolve version and tag
-        id: vars
+      - name: Confirm trigger
         run: |
-          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
-            VERSION="${{ github.event.client_payload.version }}"
-            TAG="${{ github.event.client_payload.tag }}"
-          else
-            VERSION="${{ inputs.version }}"
-            TAG="${{ inputs.source_tag }}"
-          fi
-          echo "VERSION=${VERSION}" >> "$GITHUB_OUTPUT"
-          echo "TAG=${TAG}"         >> "$GITHUB_OUTPUT"
-
-      - name: Download all binaries from source release
-        env:
-          GH_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
-        run: |
-          TAG="${{ steps.vars.outputs.TAG }}"
-          mkdir -p dist
-
-          # Download all release assets from the private repo
-          gh release download "${TAG}" \
-            --repo "${SOURCE_REPO}" \
-            --dir dist \
-            --pattern "linus-ai-*" \
-            --pattern "LinusAIEngine.xcframework.zip" \
-            --pattern "SHA256SUMS.txt"
-
-          ls -lh dist/
-
-      - name: Build release notes
-        id: notes
-        run: |
-          VERSION="${{ steps.vars.outputs.VERSION }}"
-          cat > release_notes.md <<NOTES
-          ## LINUS-AI v${VERSION}
-
-          Pre-built binaries for all supported platforms.
-          See [README](https://github.com/LINUS-AI-PRO/linus-ai-public#readme) for installation instructions.
-
-          ### Downloads
-
-          | Platform | File |
-          |---|---|
-          | macOS Universal (arm64 + x86_64) | \`linus-ai-macos-universal\` |
-          | macOS DMG | \`linus-ai-macos.dmg\` |
-          | Linux x86_64 (GUI) | \`linus-ai-linux-x86_64\` |
-          | Linux x86_64 (headless) | \`linus-ai-headless-linux-x86_64\` |
-          | Linux arm64 (headless) | \`linus-ai-headless-linux-arm64\` |
-          | Windows x86_64 | \`linus-ai-windows-x86_64.exe\` |
-          | Windows MSIX | \`linus-ai-windows-x86_64.msix\` |
-          | iOS XCFramework | \`LinusAIEngine.xcframework.zip\` |
-
-          Verify your download with \`SHA256SUMS.txt\`.
-
-          ### Requirements
-          - macOS 12.0+, Linux (Ubuntu 20.04+), Windows 10+ (x64)
-          - 8 GB RAM minimum, 16 GB recommended
-          - Any GGUF model file
-
-          [Installation guide](https://github.com/LINUS-AI-PRO/linus-ai-public#quickstart) ·
-          [linus-ai.com](https://linus-ai.com)
-          NOTES
-
-      - name: Publish GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: v${{ steps.vars.outputs.VERSION }}
-          name: LINUS-AI v${{ steps.vars.outputs.VERSION }}
-          body_path: release_notes.md
-          draft: false
-          prerelease: ${{ contains(steps.vars.outputs.VERSION, '-rc') || contains(steps.vars.outputs.VERSION, '-beta') || contains(steps.vars.outputs.VERSION, '-alpha') }}
-          files: dist/*
-          token: ${{ secrets.GITHUB_TOKEN }}
+          echo "Manual re-publish triggered for v${{ inputs.version }}"
+          echo "Normally releases are pushed by the private linus-ai CI."
+          echo "No action taken — binaries must be uploaded from the private repo."
