@@ -1,0 +1,9 @@
+dist/
+*.dmg
+*.exe
+*.msix
+*.zip
+*.a
+*.so
+*.dylib
+.DS_Store
