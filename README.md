@@ -1,116 +1,101 @@
 # LINUS-AI
 
-**Private AI mesh. Runs on your hardware. No cloud. No data leaves your machine.**
+**Private, distributed AI inference — runs entirely on your hardware.**
 
-Download a pre-built binary below, drop in a GGUF model, and you're running in under a minute.
+No cloud. No telemetry. All models and conversation data stay on your machine.
 
 ---
 
-## Download
+## Download v2.2.2
 
-| Platform | File | Notes |
+| Platform | File |
+|---|---|
+| macOS (Universal — Apple Silicon + Intel) | `linus-ai-macos-universal` |
+| macOS (Apple Silicon) | `linus-ai-macos-arm64` |
+| macOS (Intel) | `linus-ai-macos-x86_64` |
+| macOS Installer (.dmg) | `linus-ai-macos.dmg` |
+| Linux x86_64 | `linus-ai-linux-x86_64` |
+| Linux x86_64 (headless/server) | `linus-ai-headless-linux-x86_64` |
+| Linux arm64 (headless/server) | `linus-ai-headless-linux-arm64` |
+| Windows x86_64 (.exe) | `linus-ai-windows-x86_64.exe` |
+| Windows x86_64 (MSIX installer) | `linus-ai-windows-x86_64.msix` |
+| iOS (XCFramework staticlib) | `LinusAIEngine.xcframework.zip` |
+
+Verify with `SHA256SUMS.txt`.
+
+---
+
+## Quick Start
+
+**macOS / Linux**
+```bash
+chmod +x linus-ai-*
+./linus-ai-macos-universal   # or the binary for your platform
+# Open http://localhost:9480 in your browser
+```
+
+**Windows**
+```
+Run linus-ai-windows-x86_64.exe  (or install the .msix)
+Open http://localhost:9480 in your browser
+```
+
+---
+
+## Tiers
+
+| | Community | Professional | Team | Studio | Enterprise |
+|---|---|---|---|---|---|
+| **Price** | Free forever | $99/yr · $299 perp | $349/yr · $999 perp | $899/yr · $2,499 perp | $2,499/yr |
+| **Seats** | 1 | 1 | 5 | 20 | Unlimited |
+| **Max model size** | 7B params | 70B params | 70B params | 70B params | Unlimited |
+| **AI profiles** | 6 built-in | 14 + custom | 14 + custom | 14 + custom | Unlimited |
+| **Local inference** | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **GUI** | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **Tensor parallel** | — | ✓ | ✓ | ✓ | ✓ |
+| **Pipeline parallel** | — | ✓ | ✓ | ✓ | ✓ |
+| **Mesh networking** | — | ✓ | ✓ | ✓ | ✓ |
+| **Custom prompts** | — | ✓ | ✓ | ✓ | ✓ |
+| **Federated learning** | — | — | ✓ | ✓ | ✓ |
+| **Blockchain audit log** | — | — | ✓ | ✓ | ✓ |
+| **Air-gap activation** | — | — | — | — | ✓ |
+| **SSO / LDAP** | — | — | — | — | ✓ |
+| **Fine-tuning** | — | — | — | — | ✓ |
+| **Support** | Community | Email | Priority email | Priority + 48h SLA | Dedicated + on-site |
+| **License transfer** | — | ✓ | ✓ | ✓ | ✓ |
+
+Purchase at **[linus-ai.com/pricing](https://linus-ai.com/pricing)**
+
+---
+
+## Source Licensing
+
+LINUS-AI is distributed as a binary. Source access is available separately:
+
+| | Description | Price |
 |---|---|---|
-| macOS (Universal) | `linus-ai-macos-universal` | arm64 + x86_64, macOS 12+ |
-| macOS (Apple Silicon) | `linus-ai-macos-arm64` | M1/M2/M3/M4, Metal GPU |
-| macOS (Intel) | `linus-ai-macos-x86_64` | Intel Mac |
-| macOS DMG | `linus-ai-macos.dmg` | Drag-and-drop installer |
-| Linux x86_64 | `linus-ai-linux-x86_64` | Ubuntu 20.04+, Debian, etc. |
-| Linux x86_64 headless | `linus-ai-headless-linux-x86_64` | Server / CLI, no GUI |
-| Linux arm64 headless | `linus-ai-headless-linux-arm64` | Raspberry Pi 4+, ARM servers |
-| Windows x86_64 | `linus-ai-windows-x86_64.exe` | Windows 10+ |
-| Windows MSIX | `linus-ai-windows-x86_64.msix` | Microsoft Store sideload |
-| iOS XCFramework | `LinusAIEngine.xcframework.zip` | Embed in your Xcode project |
+| **Source Viewer** | Read-only audit access (up to 3 reviewers) | $499/year |
+| **Source Viewer Enterprise** | Unlimited internal reviewers | Contact us |
+| **Enterprise Source** | Build + modify internally (Enterprise subscribers only) | Contact us |
 
-Find all files on the [Releases page](../../releases/latest).
-
-SHA-256 checksums are provided in `SHA256SUMS.txt` alongside every release.
+See [SOURCE-VIEWER-LICENSE.md](SOURCE-VIEWER-LICENSE.md) and
+[ENTERPRISE-SOURCE-LICENSE.md](ENTERPRISE-SOURCE-LICENSE.md) for terms.
 
 ---
 
-## Quickstart
+## Recommended Models
 
-### macOS
+Download GGUF models and place them in your model directory:
 
-```bash
-# Download
-curl -L https://github.com/LINUS-AI-PRO/linus-ai-public/releases/latest/download/linus-ai-macos-universal \
-     -o linus-ai
-
-chmod +x linus-ai
-
-# Add a model — any .gguf file
-mkdir -p ~/models
-# e.g. llama.cpp model from Hugging Face
-
-# Run
-LINUS_AI_MODEL_DIR=~/models ./linus-ai
-# Opens http://localhost:9480/app in your browser
-```
-
-### Linux
-
-```bash
-curl -L https://github.com/LINUS-AI-PRO/linus-ai-public/releases/latest/download/linus-ai-linux-x86_64 \
-     -o linus-ai
-chmod +x linus-ai
-LINUS_AI_MODEL_DIR=~/models ./linus-ai
-```
-
-### Windows
-
-Download `linus-ai-windows-x86_64.exe`, then in PowerShell:
-
-```powershell
-$env:LINUS_AI_MODEL_DIR = "$env:USERPROFILE\models"
-.\linus-ai-windows-x86_64.exe
-```
-
----
-
-## Models
-
-LINUS-AI loads any GGUF model from a directory. Recommended starting points:
-
-| Model | VRAM | Quality |
+| Model | Size | Use case |
 |---|---|---|
-| Llama-3.1-8B-Instruct-Q4_K_M | ~5 GB | Fast, good for most tasks |
-| Llama-3.1-70B-Instruct-Q4_K_M | ~40 GB | High quality |
-| Phi-3-mini-4k-instruct-Q4 | ~2 GB | Lightweight |
-| Mistral-7B-Instruct-v0.3-Q4_K_M | ~4.5 GB | Balanced |
+| `Llama-3.1-8B-Instruct.Q4_K_M.gguf` | ~5 GB | Community tier — general use |
+| `Llama-3.1-70B-Instruct.Q4_K_M.gguf` | ~40 GB | Professional+ — high quality |
+| `Phi-3-mini-4k-instruct.Q4_K_M.gguf` | ~2 GB | Low-RAM devices |
+| `Mistral-7B-Instruct-v0.3.Q4_K_M.gguf` | ~4 GB | Fast responses |
 
-Download models from [Hugging Face](https://huggingface.co/models?library=gguf) (search for GGUF format).
-
----
-
-## Configuration
-
-All settings are optional — LINUS-AI auto-detects your hardware and models.
-
-```bash
-# Key environment variables
-LINUS_AI_MODEL_DIR=/path/to/models   # where to look for .gguf files
-LINUS_AI_API_PORT=9480               # HTTP port (default 9480)
-LINUS_AI_MODE=full                   # full | mesh | edge
-LINUS_AI_LOG_LEVEL=info              # trace | debug | info | warn | error
-```
-
-A config file (`~/.linus_ai/config.toml`) is created on first run.
-
----
-
-## Mesh Mode
-
-Multiple LINUS-AI nodes can form a private mesh — sharing inference load across machines on your network:
-
-```bash
-# Node 1 (primary)
-LINUS_AI_MODE=mesh ./linus-ai
-
-# Node 2 (same network)
-LINUS_AI_MODE=mesh LINUS_AI_API_PORT=9481 ./linus-ai
-```
-
-Nodes discover each other automatically via mDNS. No external coordination server required.
+Model directory: `~/.local/share/linus_ai/models/` (Linux/Windows) or
+`~/Library/Application Support/linus_ai/models/` (macOS)
 
 ---
 
@@ -119,24 +104,37 @@ Nodes discover each other automatically via mDNS. No external coordination serve
 | | Minimum | Recommended |
 |---|---|---|
 | RAM | 8 GB | 16 GB+ |
-| Storage | 5 GB | 50 GB+ (for models) |
-| GPU | — | Apple Metal / NVIDIA CUDA |
-| macOS | 12.0 | 13.0+ |
-| Linux | Ubuntu 20.04 | Ubuntu 22.04+ |
-| Windows | 10 (x64) | 11 |
+| Disk | 10 GB | 50 GB+ (for large models) |
+| GPU | Optional | Metal (macOS) · CUDA (NVIDIA) · ROCm (AMD) |
+| OS | macOS 12+ · Ubuntu 20.04+ · Windows 10+ | Latest stable |
 
 ---
 
-## Support
+## Mesh Mode (Professional+)
 
-- Issues: [github.com/LINUS-AI-PRO/linus-ai-public/issues](../../issues)
-- Website: [linus-ai.com](https://linus-ai.com)
+Run LINUS-AI on multiple machines and combine their compute:
+
+```bash
+# Node 1 (primary)
+LINUS_AI_MODE=full ./linus-ai
+
+# Node 2 (additional)
+LINUS_AI_MODE=mesh ./linus-ai
+# Nodes discover each other automatically via mDNS on the same network
+```
 
 ---
 
 ## License
 
-Commercial use requires a license. Personal and academic use is free.
-See [linus-ai.com](https://linus-ai.com) for pricing and license terms.
+- **Community use** (personal, academic, non-profit): Free. See [LICENSE.md](LICENSE.md).
+- **Commercial use**: Requires a paid license. See [linus-ai.com/pricing](https://linus-ai.com/pricing).
+- **Source access**: See [SOURCE-VIEWER-LICENSE.md](SOURCE-VIEWER-LICENSE.md).
 
-© 2025 LINUS-AI
+---
+
+## Support
+
+- Community: [github.com/LINUS-AI-PRO/linus-ai-public/issues](https://github.com/LINUS-AI-PRO/linus-ai-public/issues)
+- Email (Professional+): support@linus-ai.com
+- Documentation: [linus-ai.com/docs](https://linus-ai.com/docs)

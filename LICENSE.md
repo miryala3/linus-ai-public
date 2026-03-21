@@ -6,7 +6,8 @@
 
 ## Free Use
 
-Personal, academic, and non-profit use is **free** with no time limit, provided:
+Personal, academic, and non-profit use is **free** (Community tier) with no
+time limit, provided:
 
 - You do not sell LINUS-AI or a product that is substantially LINUS-AI
 - You do not offer LINUS-AI as a hosted service (SaaS) to third parties
@@ -18,14 +19,22 @@ Commercial use requires a paid license. A "commercial use" is any use by a
 for-profit entity with annual gross revenue above $100,000 USD, or any use
 where LINUS-AI is offered as a service to third parties.
 
-| Tier | Annual | Perpetual |
-|---|---|---|
-| Professional (1 seat) | $99/seat/year | $299/seat |
-| Team (up to 5 seats) | $349/year | $999 |
-| Studio (up to 20 seats) | $899/year | $2,499 |
-| Enterprise (unlimited) | $2,499/year | Contact us |
+| Tier | Seats | Annual | Perpetual |
+|---|---|---|---|
+| Professional | 1 | $99/year | $299 |
+| Team | 5 | $349/year | $999 |
+| Studio | 20 | $899/year | $2,499 |
+| Enterprise | Unlimited | $2,499/year | Contact us |
 
-Purchase or request a quote: **[linus-ai.com](https://linus-ai.com)**
+Purchase or request a quote: **[linus-ai.com/pricing](https://linus-ai.com/pricing)**
+
+## Source Access
+
+Binary-only distribution applies to all tiers above. Source code access
+is available under separate licensing:
+
+- **Source Viewer License** — read-only audit access. See [SOURCE-VIEWER-LICENSE.md](SOURCE-VIEWER-LICENSE.md).
+- **Enterprise Source License** — build and modify internally (Enterprise subscribers only). See [ENTERPRISE-SOURCE-LICENSE.md](ENTERPRISE-SOURCE-LICENSE.md).
 
 ## Disclaimer
 
