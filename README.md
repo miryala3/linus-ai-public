@@ -6,7 +6,7 @@ No cloud. No telemetry. All models and conversation data stay on your machine.
 
 ---
 
-## Download v2.2.2
+## Download v2.5.0
 
 | Platform | File |
 |---|---|
@@ -19,7 +19,6 @@ No cloud. No telemetry. All models and conversation data stay on your machine.
 | Linux arm64 (headless/server) | `linus-ai-headless-linux-arm64` |
 | Windows x86_64 (.exe) | `linus-ai-windows-x86_64.exe` |
 | Windows x86_64 (MSIX installer) | `linus-ai-windows-x86_64.msix` |
-| iOS (XCFramework staticlib) | `LinusAIEngine.xcframework.zip` |
 
 Verify with `SHA256SUMS.txt`.
 
@@ -44,25 +43,21 @@ Open http://localhost:9480 in your browser
 
 ## Tiers
 
-| | Community | Professional | Team | Studio | Enterprise |
-|---|---|---|---|---|---|
-| **Price** | Free forever | $99/yr · $299 perp | $349/yr · $999 perp | $899/yr · $2,499 perp | $2,499/yr |
-| **Seats** | 1 | 1 | 5 | 20 | Unlimited |
-| **Max model size** | 7B params | 70B params | 70B params | 70B params | Unlimited |
-| **AI profiles** | 6 built-in | 14 + custom | 14 + custom | 14 + custom | Unlimited |
-| **Local inference** | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **GUI** | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **Tensor parallel** | — | ✓ | ✓ | ✓ | ✓ |
-| **Pipeline parallel** | — | ✓ | ✓ | ✓ | ✓ |
-| **Mesh networking** | — | ✓ | ✓ | ✓ | ✓ |
-| **Custom prompts** | — | ✓ | ✓ | ✓ | ✓ |
-| **Federated learning** | — | — | ✓ | ✓ | ✓ |
-| **Blockchain audit log** | — | — | ✓ | ✓ | ✓ |
-| **Air-gap activation** | — | — | — | — | ✓ |
-| **SSO / LDAP** | — | — | — | — | ✓ |
-| **Fine-tuning** | — | — | — | — | ✓ |
-| **Support** | Community | Email | Priority email | Priority + 48h SLA | Dedicated + on-site |
-| **License transfer** | — | ✓ | ✓ | ✓ | ✓ |
+| | Community | Professional | Team | Enterprise |
+|---|---|---|---|---|
+| **Price** | Free forever | $59/yr · $149 perp | $99/yr · $299 perp | $4,999/yr |
+| **Seats** | 1 | 1 | 5 | Unlimited |
+| **Local inference** | ✓ | ✓ | ✓ | ✓ |
+| **GUI** | ✓ | ✓ | ✓ | ✓ |
+| **Vault encrypted memory** | — | ✓ | ✓ | ✓ |
+| **Agentic mode / RAG** | — | ✓ | ✓ | ✓ |
+| **Mesh networking** | — | — | ✓ | ✓ |
+| **Tensor + pipeline parallel** | — | — | ✓ | ✓ |
+| **Blockchain audit log** | — | — | ✓ | ✓ |
+| **Air-gap activation** | — | — | — | ✓ |
+| **SSO / LDAP** | — | — | — | ✓ |
+| **Fine-tuning** | — | — | — | ✓ |
+| **Support** | Community | Email | Priority email | Dedicated + on-site |
 
 Purchase at **[linus-ai.com/pricing](https://linus-ai.com/pricing)**
 
@@ -135,6 +130,6 @@ LINUS_AI_MODE=mesh ./linus-ai
 
 ## Support
 
-- Community: [github.com/LINUS-AI-PRO/linus-ai-public/issues](https://github.com/LINUS-AI-PRO/linus-ai-public/issues)
+- Community: [github.com/miryala3/linus-ai-public/issues](https://github.com/miryala3/linus-ai-public/issues)
 - Email (Professional+): support@linus-ai.com
 - Documentation: [linus-ai.com/docs](https://linus-ai.com/docs)
