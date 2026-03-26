@@ -25,7 +25,7 @@ No cloud. No telemetry. All models and conversation data stay on your machine.
 
 #### Community (Free)
 
-> Community binaries run in **Starter mode**: local inference, GUI, up to 8B models, single seat.
+> Community binaries run in **Starter mode**: local inference, GUI, up to 5B models, single seat.
 > Upgrade at **[linus-ai.com/pricing](https://linus-ai.com/pricing)** to unlock vault, agentic mode, mesh, and more.
 
 | Platform | File |
@@ -80,7 +80,7 @@ The headless binary (`linus-ai-headless-linux-x86_64`) has no extra requirements
 | **Seats** | 1 | 1 | 5 | Unlimited |
 | **Local inference** | ✓ | ✓ | ✓ | ✓ |
 | **GUI** | ✓ | ✓ | ✓ | ✓ |
-| **Model size limit** | 8B | Unlimited | Unlimited | Unlimited |
+| **Model size limit** | 5B | Unlimited | Unlimited | Unlimited |
 | **Vault encrypted memory** | — | ✓ | ✓ | ✓ |
 | **Agentic mode / RAG** | — | ✓ | ✓ | ✓ |
 | **Mesh networking** | — | — | ✓ | ✓ |
@@ -99,7 +99,7 @@ Download GGUF models and place them in your model directory:
 
 | Model | Size | Best for |
 |---|---|---|
-| `Llama-3.1-8B-Instruct.Q4_K_M.gguf` | ~5 GB | Community — general use |
+| `Phi-3-mini-4k-instruct.Q4_K_M.gguf` | ~2 GB | Community — general use |
 | `Llama-3.1-70B-Instruct.Q4_K_M.gguf` | ~40 GB | Professional+ — high quality |
 | `Phi-3-mini-4k-instruct.Q4_K_M.gguf` | ~2 GB | Low-RAM devices |
 | `Mistral-7B-Instruct-v0.3.Q4_K_M.gguf` | ~4 GB | Fast responses |
