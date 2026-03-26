@@ -89,7 +89,7 @@ The headless binary (`linus-ai-headless-linux-x86_64`) has no extra requirements
 | **Air-gap activation** | — | — | — | ✓ |
 | **SSO / LDAP** | — | — | — | ✓ |
 | **Fine-tuning** | — | — | — | ✓ |
-| **Support** | Community | Email | Priority email | Dedicated + on-site |
+| **Support** | Community | Email | Priority email | Email |
 
 **→ [Buy a license at linus-ai.com/pricing](https://linus-ai.com/pricing)**
 
@@ -197,5 +197,5 @@ Enterprise and clinical deployment only. [Contact sales](mailto:support@linus-ai
 | [GitHub Issues](https://github.com/miryala3/linus-ai-public/issues) | All users |
 | [support@linus-ai.com](mailto:support@linus-ai.com) | All tiers |
 | Priority email | Professional+ |
-| Dedicated support + on-site | Enterprise |
+| Email support | Enterprise |
 | [linus-ai.com/docs](https://linus-ai.com/docs) | All users |
