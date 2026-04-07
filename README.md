@@ -41,14 +41,15 @@ curl -LO https://github.com/miryala3/linus-ai-public/releases/download/v3.0.0/li
 # 2. Make it executable
 chmod +x linus-ai-3.0.0-macos-arm64
 
-# 3. Remove macOS quarantine (required for unsigned binaries)
+# 3. Remove macOS quarantine and ad-hoc sign
 xattr -d com.apple.quarantine linus-ai-3.0.0-macos-arm64
+codesign --force --deep --sign - linus-ai-3.0.0-macos-arm64
 
 # 4. Run
 ./linus-ai-3.0.0-macos-arm64
 ```
 
-> **Gatekeeper note:** If macOS blocks the binary, go to  
+> **Gatekeeper note:** If macOS still blocks the binary, go to  
 > **System Settings → Privacy & Security → scroll down → "Open Anyway"**
 
 The GUI opens at **http://127.0.0.1:9480** in your default browser.  
