@@ -1,6 +1,6 @@
 # LINUS-AI — Download Hub
 
-Pre-built binaries for all LINUS-AI products. All products run entirely on your hardware — no cloud, no telemetry.
+Pre-built binaries for all LINUS-AI products. Everything runs entirely on your hardware — no cloud, no telemetry, no subscription required.
 
 ---
 
@@ -8,12 +8,12 @@ Pre-built binaries for all LINUS-AI products. All products run entirely on your 
 
 | Product | Latest Release | Description |
 |---|---|---|
-| **[LINUS-AI](https://github.com/miryala3/linus-ai-public/releases/tag/v2.6.0)** | v2.6.0 | Private distributed AI platform |
-| **[LINUS BizCore](https://github.com/miryala3/linus-ai-public/releases/tag/bizcore-v2.6.0)** | v2.6.0 | Local-first business OS |
+| **[LINUS-AI](https://github.com/miryala3/linus-ai-public/releases/tag/v3.0.0)** | v3.0.0 | Private distributed AI platform |
+| **[LINUS BizCore](https://github.com/miryala3/linus-ai-public/releases/tag/bizcore-v3.0.0)** | v3.0.0 | Local-first business OS |
 
 ---
 
-## LINUS-AI v2.6.0
+## LINUS-AI v3.0.0
 
 Private AI that runs on your hardware. Single binary, no Python, no cloud.
 
@@ -21,44 +21,119 @@ Private AI that runs on your hardware. Single binary, no Python, no cloud.
 
 | Platform | File | Notes |
 |---|---|---|
-| macOS (Universal DMG) | `linus-ai-2.6.0-macos.dmg` | arm64 + x86_64, drag to Applications |
-| macOS arm64 binary | `linus-ai-2.6.0-macos-arm64` | Apple Silicon |
-| macOS x86_64 binary | `linus-ai-2.6.0-macos-x86_64` | Intel Mac |
-| macOS Universal binary | `linus-ai-2.6.0-macos-universal` | Both architectures |
-| Linux x86_64 GUI | `linus-ai-2.6.0-linux-x86_64` | Requires WebKit2GTK |
-| Linux x86_64 .deb | `linus-ai_2.6.0_amd64.deb` | Debian/Ubuntu package |
-| Linux x86_64 headless | `linus-ai-2.6.0-headless-linux-x86_64` | Server/CLI mode |
-| Linux arm64 headless | `linus-ai-2.6.0-headless-linux-arm64` | Raspberry Pi 5, ARM servers |
-| macOS arm64 headless | `linus-ai-2.6.0-headless-macos-arm64` | |
-| macOS x86_64 headless | `linus-ai-2.6.0-headless-macos-x86_64` | |
-| Windows x86_64 (MSIX) | `linus-ai-2.6.0-windows-x86_64.msix` | Microsoft Store format |
-| Windows x86_64 binary | `linus-ai-2.6.0-windows-x86_64.exe` | Portable |
-| Windows x86_64 headless | `linus-ai-2.6.0-headless-windows-x86_64.exe` | Server/CLI mode |
+| macOS arm64 | `linus-ai-3.0.0-macos-arm64` | Apple Silicon (M1/M2/M3/M4) |
+| macOS x86_64 | `linus-ai-3.0.0-macos-x86_64` | Intel Mac |
+| macOS Universal | `linus-ai-3.0.0-macos-universal` | arm64 + x86_64 in one binary |
+| Linux x86_64 | `linus-ai-3.0.0-linux-x86_64` | GUI mode, requires WebKit2GTK |
+| Linux arm64 | `linus-ai-3.0.0-linux-arm64` | Raspberry Pi 5, ARM servers |
+| Windows x86_64 | `linus-ai-3.0.0-windows-x86_64.exe` | Portable, no install needed |
+
+---
+
+## How to Launch
+
+### macOS
 
 ```bash
-# macOS / Linux:
-chmod +x linus-ai-2.6.0-linux-x86_64 && ./linus-ai-2.6.0-linux-x86_64
+# 1. Download the binary for your chip (arm64 = Apple Silicon, x86_64 = Intel)
+curl -LO https://github.com/miryala3/linus-ai-public/releases/download/v3.0.0/linus-ai-3.0.0-macos-arm64
 
-# Linux GUI runtime deps:
-sudo apt-get install -y libwebkit2gtk-4.1-0 libgtk-3-0 \
-  libayatana-appindicator3-1 librsvg2-2 libxdo3
+# 2. Make it executable
+chmod +x linus-ai-3.0.0-macos-arm64
+
+# 3. Remove macOS quarantine (required for unsigned binaries)
+xattr -d com.apple.quarantine linus-ai-3.0.0-macos-arm64
+
+# 4. Run
+./linus-ai-3.0.0-macos-arm64
 ```
 
-### Tiers
+> **Gatekeeper note:** If macOS blocks the binary, go to  
+> **System Settings → Privacy & Security → scroll down → "Open Anyway"**
+
+The GUI opens at **http://127.0.0.1:9480** in your default browser.  
+The control panel is at **http://127.0.0.1:9480/app** (settings, licence, models).
+
+---
+
+### Linux
+
+```bash
+# 1. Install runtime dependencies (Debian/Ubuntu)
+sudo apt-get install -y libwebkit2gtk-4.1-0 libgtk-3-0 \
+  libayatana-appindicator3-1 librsvg2-2 libxdo3
+
+# 2. Download
+curl -LO https://github.com/miryala3/linus-ai-public/releases/download/v3.0.0/linus-ai-3.0.0-linux-x86_64
+
+# 3. Make executable and run
+chmod +x linus-ai-3.0.0-linux-x86_64
+./linus-ai-3.0.0-linux-x86_64
+```
+
+> **Fedora/RHEL:** Install `webkit2gtk4.1` and `gtk3` via dnf instead.
+
+---
+
+### Windows
+
+```powershell
+# Download linus-ai-3.0.0-windows-x86_64.exe from the Releases page, then:
+.\linus-ai-3.0.0-windows-x86_64.exe
+```
+
+> **SmartScreen note:** Click "More info" → "Run anyway" if Windows Defender SmartScreen appears.  
+> The binary is not code-signed yet — this is expected for v3.0.0.
+
+---
+
+## First Launch
+
+1. The binary starts a local server on **port 9480** and **port 9481** (API).
+2. Your browser opens automatically to **http://127.0.0.1:9480**.
+3. On first run, LINUS-AI operates in **Community** mode (free, 5B model cap).
+4. To unlock higher tiers, go to **Settings → Licence → Activate** and paste your key.
+
+### Activate a Licence Key
+
+```
+Control Panel → http://127.0.0.1:9480/app
+  └── Settings → Licence → Paste key → Activate
+```
+
+Activation is **fully offline** — no internet required after the one-time check.  
+Keys are tied to one machine. To move: **Settings → Licence → Deactivate**, then activate on the new machine.
+
+### Download a Model
+
+```
+Control Panel → Models → Browse → Download
+```
+
+Recommended starting models:
+- **Llama 3.2 3B** — fastest, works on 8 GB RAM
+- **Mistral 7B Q4** — balanced quality/speed on 16 GB RAM
+- **Llama 3.1 70B Q4** — full Pro/Team tier capability on 64 GB+ RAM
+
+---
+
+## Tiers & Pricing
 
 | Tier | Price | Model Cap | Key Features |
 |---|---|---|---|
 | Community | Free | 5B params | Inference + GUI |
-| Trial | Free 30 days | 70B params | Full Professional |
-| Professional | $149 one-time | 70B params | Vault, agentic, mesh, API |
-| Team | $299 one-time | 70B params | + Federated learning, audit |
-| Enterprise | $4,999/yr | Unlimited | + Air-gap, SSO, fine-tuning |
+| Professional | $249 one-time | 70B params | Vault, agentic mode, mesh, REST API |
+| Team | $799 one-time | 70B params | + Federated learning, blockchain audit, 5 seats |
+| Enterprise | $3,500–$6,000/yr | Unlimited | + Air-gap, SSO/LDAP, fine-tuning, priority support |
 
-Purchase: [linus-ai.com/pricing](https://linus-ai.com/pricing)
+Hardware caps apply within each tier: 8 GB RAM ≈ 8B Q4, 16 GB ≈ 14B, 32 GB ≈ 34B, 64 GB+ ≈ up to your tier ceiling.
+
+Purchase: [linus-ai.com/pricing](https://linus-ai.com/pricing)  
+PayPal accepted at checkout.
 
 ---
 
-## LINUS BizCore v2.6.0
+## LINUS BizCore v3.0.0
 
 Complete business OS — invoicing, CRM, HR, accounting, AI assistant. One-time purchase.
 
@@ -66,9 +141,9 @@ Complete business OS — invoicing, CRM, HR, accounting, AI assistant. One-time 
 
 | Platform | File |
 |---|---|
-| macOS arm64 (Apple Silicon) | `bizcore-LINUS-BizCore_2.6.0_aarch64.dmg` |
-| Linux x86_64 | `bizcore-LINUS-BizCore_2.6.0_amd64.deb` / `.AppImage` |
-| Windows x86_64 | `bizcore-LINUS-BizCore_2.6.0_x64-setup.exe` |
+| macOS arm64 (Apple Silicon) | `bizcore-LINUS-BizCore_3.0.0_aarch64.dmg` |
+| Linux x86_64 | `bizcore-LINUS-BizCore_3.0.0_amd64.deb` / `.AppImage` |
+| Windows x86_64 | `bizcore-LINUS-BizCore_3.0.0_x64-setup.exe` |
 
 ```bash
 # Linux runtime deps:
@@ -90,11 +165,27 @@ sudo apt-get install -y libwebkit2gtk-4.1-0 libgtk-3-0 \
 
 ## Verify Downloads
 
-All releases include `SHA256SUMS.txt`:
+All releases include `SHA256SUMS.txt`. Verify before running:
 
 ```bash
+# Linux / macOS
 sha256sum -c SHA256SUMS.txt
+
+# macOS (shasum)
+shasum -a 256 -c SHA256SUMS.txt
 ```
+
+---
+
+## Firewall / Port Reference
+
+| Port | Purpose |
+|---|---|
+| 9480 | GUI + web interface |
+| 9481 | REST API (local only by default) |
+| 9482 | Mesh networking (Pro/Team/Enterprise) |
+
+All ports bind to `127.0.0.1` by default. No inbound internet exposure.
 
 ---
 
@@ -103,12 +194,12 @@ sha256sum -c SHA256SUMS.txt
 | Tier | Support |
 |---|---|
 | Community | [GitHub Issues](https://github.com/miryala3/linus-ai-public/issues) |
-| Professional / Team | Email support: support@linus-ai.com |
-| Enterprise | Email support + SLA: support@linus-ai.com |
+| Professional / Team | support@linus-ai.com |
+| Enterprise | support@linus-ai.com + SLA |
 
 ---
 
-## Source
+## Source & Licensing
 
-Source code for LINUS-AI is available under the [LINUS Source License v2.0](https://linus-ai.com/license).
-Contact [sales@linus-ai.com](mailto:sales@linus-ai.com) for commercial licensing.
+Source code is available under the [LINUS Source License v2.0](https://linus-ai.com/license).  
+For commercial licensing: [sales@linus-ai.com](mailto:sales@linus-ai.com)
