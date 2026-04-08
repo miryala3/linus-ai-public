@@ -1,4 +1,4 @@
-# LINUS BizCore v2.6.0
+# LINUS BizCore v4.0.0
 
 **Local-first business OS — invoicing, CRM, accounting, HR, and AI assistant. No SaaS fees.**
 
@@ -27,13 +27,13 @@ Download from **[GitHub Releases — latest](https://github.com/miryala3/linus-b
 |---|---|
 | macOS arm64 (Apple Silicon) | `LINUS-BizCore_4.0.0_aarch64.dmg` |
 | Linux x86_64 | `LINUS-BizCore_4.0.0_amd64.deb` / `LINUS-BizCore_4.0.0_amd64.AppImage` |
-| Windows x86_64 | coming in v3.1 |
+| Windows x86_64 | `LINUS-BizCore_4.0.0_x64-setup.exe` / `LINUS-BizCore_4.0.0_x64_en-US.msi` |
 
 ### macOS — first launch
 
 The DMG is unsigned. Before opening:
 ```bash
-xattr -d com.apple.quarantine bizcore-LINUS-BizCore_2.6.0_aarch64.dmg
+xattr -d com.apple.quarantine LINUS-BizCore_4.0.0_aarch64.dmg
 ```
 Then double-click the DMG, drag BizCore to Applications, and right-click → Open on first launch.
 
@@ -57,9 +57,9 @@ sudo apt-get install -y libwebkit2gtk-4.1-0 libgtk-3-0 \
 
 | Tier | Link |
 |---|---|
-| Starter — $199 | [Pay $199](https://www.paypal.com/ncp/payment/LNBC-STARTER) |
-| Business — $299 | [Pay $299](https://www.paypal.com/ncp/payment/LNBC-BIZ) |
-| Unlimited — $599 | [Pay $599](https://www.paypal.com/ncp/payment/LNBC-UNL) |
+| Starter — $199 | [Pay $199](https://www.paypal.com/ncp/payment/RY263RA748ZWY) |
+| Business — $299 | [Pay $299](https://www.paypal.com/ncp/payment/VNFMWHE2UQ9AE) |
+| Unlimited — $599 | [Pay $599](https://www.paypal.com/ncp/payment/57ZWKLYLZ6B3W) |
 
 After payment, email **support@linus-ai.com** with your order confirmation — your license key will be delivered within 1 business day.
 
@@ -72,9 +72,9 @@ After 14 days, a license key is required to continue. **Buy now via PayPal:**
 
 | Tier | Link |
 |---|---|
-| Starter — $199 | [Pay $199](https://www.paypal.com/ncp/payment/LNBC-STARTER) |
-| Business — $299 | [Pay $299](https://www.paypal.com/ncp/payment/LNBC-BIZ) |
-| Unlimited — $599 | [Pay $599](https://www.paypal.com/ncp/payment/LNBC-UNL) |
+| Starter — $199 | [Pay $199](https://www.paypal.com/ncp/payment/RY263RA748ZWY) |
+| Business — $299 | [Pay $299](https://www.paypal.com/ncp/payment/VNFMWHE2UQ9AE) |
+| Unlimited — $599 | [Pay $599](https://www.paypal.com/ncp/payment/57ZWKLYLZ6B3W) |
 
 After payment, email **support@linus-ai.com** with your order confirmation — your license key will be delivered within 1 business day.
 

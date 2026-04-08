@@ -53,8 +53,8 @@ LINUS-AI Medical is an **enterprise product**. Pricing is based on deployment si
 
 | Tier | Concurrent Users | Link |
 |---|---|---|
-| Clinic | 25 | [Pay $1,499](https://www.paypal.com/ncp/payment/LNMD-CLINIC) |
-| Hospital | 500 | [Pay $4,999](https://www.paypal.com/ncp/payment/LNMD-HOSP) |
+| Clinic | 25 | [Pay $1,499](https://www.paypal.com/ncp/payment/AK3Q7XPYMMY3S) |
+| Hospital | 500 | [Pay $9,999](https://www.paypal.com/ncp/payment/DAJ5PCGUVGHNW) |
 | Health System | Unlimited | [Contact sales](mailto:sales@linus-ai.com) |
 
 After payment, email **support@linus-ai.com** with your order confirmation — your license key will be delivered within 1 business day.

@@ -182,9 +182,9 @@ Hardware caps apply within each tier: 8 GB RAM → ~8B Q4 effective, 16 GB → ~
 
 | Tier | Link |
 |---|---|
-| Professional — $499 | [Pay $499](https://www.paypal.com/ncp/payment/LNAI-PRO) |
-| Team — $1,499 | [Pay $1,499](https://www.paypal.com/ncp/payment/LNAI-TEAM) |
-| Enterprise — $7,999/yr | [Pay $7,999](https://www.paypal.com/ncp/payment/LNAI-ENT) |
+| Professional — $499 | [Pay $499](https://www.paypal.com/ncp/payment/NMFSELLNG7X7U) |
+| Team — $1,499 | [Pay $1,499](https://www.paypal.com/ncp/payment/RRHAWGNKDQL5A) |
+| Enterprise — $7,999/yr | [Pay $7,999](https://www.paypal.com/ncp/payment/Z5J9RLR3YT6RA) |
 
 After payment, email **support@linus-ai.com** with your order confirmation — your license key will be delivered within 1 business day.
 
@@ -227,7 +227,7 @@ Everything in Team, plus:
 - Unlimited seats
 - Priority email support + SLA
 
-> **Coming in v3.1–v3.3:** Vault encrypted secret store, fine-tuning (LoRA), air-gap deployment.  
+> **Coming in v4.1+:** Vault encrypted secret store, fine-tuning (LoRA), air-gap deployment.  
 > Enterprise licence holders get these automatically when released.
 
 ### Medical Solo ($1,499 one-time)

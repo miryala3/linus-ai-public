@@ -52,13 +52,13 @@ No license keys — sign in with your account.
 
 14-day free trial — no credit card required.
 
-**Buy now (annual subscription via Stripe):**
+**Buy now via PayPal:**
 
 | Tier | Link |
 |---|---|
-| Solo Practice — $299/yr | [Subscribe](https://buy.stripe.com/aiMED-solo) |
-| Small Practice — $799/yr | [Subscribe](https://buy.stripe.com/aiMED-small) |
-| Group Practice — $1,999/yr | [Subscribe](https://buy.stripe.com/aiMED-group) |
+| Solo Practice — $299/yr | [Pay $299](https://www.paypal.com/ncp/payment/59YHJD9W2RYYE) |
+| Small Practice — $799/yr | [Pay $799](https://www.paypal.com/ncp/payment/BZPJUT2U5HSMG) |
+| Group Practice — $1,999/yr | [Pay $1,999](https://www.paypal.com/ncp/payment/NHK2TN4D9YV9S) |
 
 **Flow:**
 1. Subscribe above (Stripe Checkout)

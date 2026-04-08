@@ -129,7 +129,7 @@ npm run build
 
 # Package all 5 browsers
 npm run build:ext
-# Output: packages/bizcore-{chrome,edge,brave,opera,firefox}-v2.2.2.{zip,xpi}
+# Output: packages/bizcore-{chrome,edge,brave,opera,firefox}-v4.0.0.{zip,xpi}
 ```
 
 ### CI/CD
@@ -153,8 +153,8 @@ Included free with any **LINUS BizCore** desktop license. If you only want the e
 
 | Option | Price | Link |
 |---|---|---|
-| Extension only | $99 one-time | [Pay $99](https://www.paypal.com/ncp/payment/LNBC-EXT) |
-| BizCore + Extension bundle | $299 one-time | [Pay $299](https://www.paypal.com/ncp/payment/LNBC-BIZ) |
+| Extension only | $99 one-time | [Pay $99](https://www.paypal.com/ncp/payment/FLRGDB82RZ86E) |
+| BizCore + Extension bundle | $299 one-time | [Pay $299](https://www.paypal.com/ncp/payment/VNFMWHE2UQ9AE) |
 
 After payment, email **support@linus-ai.com** with your order confirmation — your license key will be delivered within 1 business day.
 
