@@ -54,33 +54,29 @@ Private AI that runs entirely on your hardware — no cloud, no telemetry, no Py
 
 ### Download
 
-| Platform | File | Size |
-|---|---|---|
-| macOS arm64 (Apple Silicon) | [`linus-ai-4.0.0-macos-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-macos-arm64) | ~39 MB |
-| macOS x86_64 (Intel) | [`linus-ai-4.0.0-macos-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-macos-x86_64) | ~47 MB |
-| macOS Universal | [`linus-ai-4.0.0-macos-universal`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-macos-universal) | ~86 MB |
-| Linux x86_64 | [`linus-ai-4.0.0-linux-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-linux-x86_64) | ~48 MB |
-| Linux arm64 | [`linus-ai-4.0.0-linux-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-linux-arm64) | ~37 MB |
-| Windows x86_64 | [`linus-ai-4.0.0-windows-x86_64.exe`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-windows-x86_64.exe) | ~46 MB |
-
-Verify with [`SHA256SUMS.txt`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/SHA256SUMS.txt).
+| Platform | File |
+|---|---|
+| Linux x86_64 | [`linus-ai-4.0.0-headless-linux-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-linux-x86_64) |
+| Linux arm64 (Raspberry Pi / server) | [`linus-ai-4.0.0-headless-linux-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-linux-arm64) |
+| macOS arm64 (Apple Silicon) | [`linus-ai-4.0.0-headless-macos-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-macos-arm64) |
+| macOS x86_64 (Intel) | [`linus-ai-4.0.0-headless-macos-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-macos-x86_64) |
+| Windows x86_64 | [`linus-ai-4.0.0-headless-windows-x86_64.exe`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-windows-x86_64.exe) |
+| Checksums | [`SHA256SUMS.txt`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/SHA256SUMS.txt) |
 
 ### Install
 
 **macOS**
 ```bash
-chmod +x linus-ai-4.0.0-macos-arm64
-xattr -d com.apple.quarantine linus-ai-4.0.0-macos-arm64
-codesign --force --deep --sign - linus-ai-4.0.0-macos-arm64
-./linus-ai-4.0.0-macos-arm64
+chmod +x linus-ai-4.0.0-headless-macos-arm64
+xattr -d com.apple.quarantine linus-ai-4.0.0-headless-macos-arm64
+./linus-ai-4.0.0-headless-macos-arm64
 ```
-> If still blocked: **System Settings → Privacy & Security → Open Anyway**
+> If macOS blocks it: **System Settings → Privacy & Security → Open Anyway**
 
 **Linux**
 ```bash
-sudo apt-get install -y libwebkit2gtk-4.1-0 libgtk-3-0 libayatana-appindicator3-1 librsvg2-2
-chmod +x linus-ai-4.0.0-linux-x86_64
-./linus-ai-4.0.0-linux-x86_64
+chmod +x linus-ai-4.0.0-headless-linux-x86_64
+./linus-ai-4.0.0-headless-linux-x86_64
 ```
 
 **Windows** — Download and run the `.exe`. Click "More info → Run anyway" if SmartScreen appears.

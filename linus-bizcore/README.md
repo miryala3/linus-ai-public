@@ -1,43 +1,46 @@
 # LINUS BizCore v4.0.0
 
-**Local-first business OS — invoicing, CRM, accounting, HR, and AI assistant. No SaaS fees.**
+**All your business tools in one desktop app — no monthly fees, no cloud, your data stays with you.**
 
 [![License](https://img.shields.io/badge/license-Proprietary-red)](LICENSE-COMMERCIAL.md)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)]()
 [![Version](https://img.shields.io/badge/version-4.0.0-green)]()
 
 > Part of the **[LINUS-AI Product Suite](https://github.com/miryala3/linus-ai-public#readme)**  
-> All downloads and purchase links: [github.com/miryala3/linus-ai-public](https://github.com/miryala3/linus-ai-public#readme)
+> Downloads and pricing: [github.com/miryala3/linus-ai-public](https://github.com/miryala3/linus-ai-public#readme)
 
 ---
 
-## What is LINUS BizCore?
+## What does it do?
 
-LINUS BizCore is a complete desktop business suite for small businesses. Invoicing, contacts, tasks, calendar, documents, HR & payroll, and accounting — all in one app, running entirely on your machine. The built-in AI assistant connects to LINUS-AI (port 9480) or Ollama (port 11434) on your LAN for zero-cloud AI.
+LINUS BizCore is a complete business desktop app for small businesses. Invoicing, contacts, tasks, calendar, documents, HR, payroll, and accounting — all in one place, running on your computer with no subscription.
 
-One-time purchase. No subscriptions. Your data stays local.
+The built-in AI assistant connects to LINUS-AI running on your machine or network, so you can ask questions about your business data without sending anything to a cloud server.
 
 ---
 
 ## Download
 
-Download from **[GitHub Releases — latest](https://github.com/miryala3/linus-bizcore/releases/latest)**
+Go to **[Releases — v4.0.0](https://github.com/miryala3/linus-bizcore/releases/latest)** and pick your platform.
 
 | Platform | File |
 |---|---|
-| macOS arm64 (Apple Silicon) | `LINUS-BizCore_4.0.0_aarch64.dmg` |
-| Linux x86_64 | `LINUS-BizCore_4.0.0_amd64.deb` / `LINUS-BizCore_4.0.0_amd64.AppImage` |
-| Windows x86_64 | `LINUS-BizCore_4.0.0_x64-setup.exe` / `LINUS-BizCore_4.0.0_x64_en-US.msi` |
+| Mac (Apple Silicon — M1/M2/M3/M4) | [`LINUS-BizCore_4.0.0_aarch64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/LINUS-BizCore_4.0.0_aarch64.dmg) |
+| Linux 64-bit (Debian/Ubuntu) | [`LINUS-BizCore_4.0.0_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/LINUS-BizCore_4.0.0_amd64.deb) |
+| Linux 64-bit (universal) | [`LINUS-BizCore_4.0.0_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/LINUS-BizCore_4.0.0_amd64.AppImage) |
+| Windows 64-bit | [`LINUS-BizCore_4.0.0_x64-setup.exe`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/LINUS-BizCore_4.0.0_x64-setup.exe) |
+| Windows 64-bit (Store installer) | [`LINUS-BizCore_4.0.0_x64_en-US.msi`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/LINUS-BizCore_4.0.0_x64_en-US.msi) |
+| Checksums | [`SHA256SUMS.txt`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/SHA256SUMS.txt) |
 
-### macOS — first launch
+### Mac — first launch
 
-The DMG is unsigned. Before opening:
 ```bash
 xattr -d com.apple.quarantine LINUS-BizCore_4.0.0_aarch64.dmg
 ```
-Then double-click the DMG, drag BizCore to Applications, and right-click → Open on first launch.
+Double-click the DMG, drag BizCore to Applications, right-click → Open on first launch.
 
-### Linux runtime dependencies
+### Linux — required libraries
+
 ```bash
 sudo apt-get install -y libwebkit2gtk-4.1-0 libgtk-3-0 \
   libayatana-appindicator3-1 librsvg2-2
@@ -47,127 +50,113 @@ sudo apt-get install -y libwebkit2gtk-4.1-0 libgtk-3-0 \
 
 ## Pricing
 
-| Tier | Price | Modules | AI Assistant | Users |
+| Plan | Price | Modules | AI Assistant | People |
 |---|---|---|---|---|
-| **Starter** | $199 one-time | Core 5 modules | ✓ (read-only) | 1 |
-| **Business** | $299 one-time | All 8 modules | ✓ full | 3 |
-| **Unlimited** | $599 one-time | All modules | ✓ full | Unlimited |
+| **Starter** | $199 one-time | Core 5 modules | Read-only | 1 |
+| **Business** | $299 one-time | All 8 modules | Full | 3 |
+| **Unlimited** | $599 one-time | All 8 modules | Full | Unlimited |
 
-**Buy now via PayPal:**
+**Pay now via PayPal:**
 
-| Tier | Link |
+| Plan | Link |
 |---|---|
 | Starter — $199 | [Pay $199](https://www.paypal.com/ncp/payment/RY263RA748ZWY) |
 | Business — $299 | [Pay $299](https://www.paypal.com/ncp/payment/VNFMWHE2UQ9AE) |
 | Unlimited — $599 | [Pay $599](https://www.paypal.com/ncp/payment/57ZWKLYLZ6B3W) |
 
-After payment, email **support@linus-ai.com** with your order confirmation — your license key will be delivered within 1 business day.
+Pay via PayPal → email **support@linus-ai.com** with your receipt → receive license key within 1 business day.
 
 ---
 
-## Trial
+## Free trial
 
-First launch activates a free **14-day trial** with full Business-tier access.
-After 14 days, a license key is required to continue. **Buy now via PayPal:**
-
-| Tier | Link |
-|---|---|
-| Starter — $199 | [Pay $199](https://www.paypal.com/ncp/payment/RY263RA748ZWY) |
-| Business — $299 | [Pay $299](https://www.paypal.com/ncp/payment/VNFMWHE2UQ9AE) |
-| Unlimited — $599 | [Pay $599](https://www.paypal.com/ncp/payment/57ZWKLYLZ6B3W) |
-
-After payment, email **support@linus-ai.com** with your order confirmation — your license key will be delivered within 1 business day.
+First launch gives you a **14-day free trial** with full Business-plan access — no key needed.
 
 ---
 
-## Modules
+## What's in each plan
 
-| Module | Starter | Business | Unlimited |
+### For everyday users
+
+| What you can do | Starter | Business | Unlimited |
 |---|---|---|---|
-| **Dashboard** — activity feed, KPIs, cash flow snapshot | ✓ | ✓ | ✓ |
-| **Invoicing** — create, send, track invoices + payments | ✓ | ✓ | ✓ |
-| **Contacts / CRM** — customers, vendors, interaction history | ✓ | ✓ | ✓ |
-| **Tasks** — project tasks, deadlines, assignments | ✓ | ✓ | ✓ |
-| **Calendar** — scheduling, reminders, team events | ✓ | ✓ | ✓ |
-| **Documents** — file storage, templates, e-sign | — | ✓ | ✓ |
-| **HR & Payroll** — employees, time tracking, payslips | — | ✓ | ✓ |
-| **Accounting** — chart of accounts, P&L, balance sheet | — | ✓ | ✓ |
-| **AI Assistant** — chat with your business data | read-only | ✓ | ✓ |
+| Dashboard — daily activity, cash flow, key numbers | ✓ | ✓ | ✓ |
+| Invoicing — create, send, and track invoices and payments | ✓ | ✓ | ✓ |
+| Contacts / CRM — customers, vendors, interaction history | ✓ | ✓ | ✓ |
+| Tasks — projects, deadlines, assignments | ✓ | ✓ | ✓ |
+| Calendar — scheduling, reminders, events | ✓ | ✓ | ✓ |
+| Documents — file storage, templates, e-sign | — | ✓ | ✓ |
+| HR & Payroll — employees, time tracking, payslips | — | ✓ | ✓ |
+| Accounting — accounts, profit & loss, balance sheet | — | ✓ | ✓ |
+| AI Assistant — ask questions, get summaries, draft emails | Read-only | Full | Full |
+| Number of people sharing the license | 1 | 3 | Unlimited |
+
+### For business owners / power users
+
+| What you can do | Starter | Business | Unlimited |
+|---|---|---|---|
+| PDF invoices and reports | ✓ | ✓ | ✓ |
+| CSV import and export for all data | ✓ | ✓ | ✓ |
+| Stripe payment integration | — | ✓ | ✓ |
+| Email integration (SendGrid) | — | ✓ | ✓ |
+| Bank feed connection (Plaid) | — | ✓ | ✓ |
+| AI: summarise invoices and flag overdue accounts | — | ✓ | ✓ |
+| AI: draft customer emails | — | ✓ | ✓ |
+| AI: answer questions about your HR records or financials | — | ✓ | ✓ |
+| AI: generate reports from plain-language questions | — | ✓ | ✓ |
+
+### For IT / admins
+
+| What you can do | Starter | Business | Unlimited |
+|---|---|---|---|
+| All data encrypted at rest (AES-256) | ✓ | ✓ | ✓ |
+| Sensitive fields (SSN, bank details) individually encrypted | ✓ | ✓ | ✓ |
+| Database protected by a master password | ✓ | ✓ | ✓ |
+| Fully offline — works without internet | ✓ | ✓ | ✓ |
+| AI connects to local LINUS-AI server (no cloud AI) | ✓ | ✓ | ✓ |
+| Works on your LAN — AI can run on a different machine | — | ✓ | ✓ |
 
 ---
 
-## AI Assistant
+## AI setup
 
-BizCore connects to a LINUS-AI server or Ollama instance on your LAN for AI assistance:
+Settings → AI → enter your LINUS-AI server address (default: `http://localhost:9480`).
 
-- Summarise invoices, flag overdue accounts
-- Draft email responses to customers
-- Answer questions about your HR records or financials
-- Generate reports from natural language queries
-
-**Setup:** Settings → AI → enter server address (default: `http://localhost:9480`). No internet required.
+If LINUS-AI is running on a separate machine on your network, enter that machine's IP address instead. No internet needed.
 
 ---
 
-## Technical Features
+## License key entry
 
-- **Database:** SQLite with SQLCipher (AES-256 encryption at rest)
-- **Key derivation:** PBKDF2 / Argon2id for database unlock
-- **Field encryption:** AES-256-GCM for sensitive fields (SSN, bank details)
-- **Built with:** Tauri 2.0 (Rust + WebView), React frontend, SQLite
-- **Integrations:** Stripe (payments), SendGrid (email), Plaid (bank feeds) — all optional
-- **PDF export:** Native PDF generation for invoices and reports
-- **CSV import/export:** All data tables
-- **Offline-first:** Works without internet; sync is always local
+After receiving your key:
+- Open BizCore → App menu → **License** → **Enter Key**
+
+License key format: `LNBC-ENT-XXXXX` / `LNBC-PRO-XXXXX` / `LNBC-GRW-XXXXX` / `LNBC-STR-XXXXX`
 
 ---
 
-## System Requirements
+## Technical details (for developers)
 
-| | Minimum | Recommended |
-|---|---|---|
-| **OS** | macOS 12, Ubuntu 22.04, Windows 10 | macOS 14, Ubuntu 24.04, Windows 11 |
-| **RAM** | 4 GB | 8 GB |
-| **Storage** | 500 MB | 2 GB |
-| **Display** | 1024 × 600 | 1280 × 800 |
-| **AI (optional)** | LINUS-AI on LAN | LINUS-AI Professional on same machine |
+- Built with **Tauri 2.0** (Rust backend + web frontend) — native performance, small footprint
+- Database: **SQLite** encrypted with **SQLCipher** (AES-256)
+- Key derivation: **PBKDF2 / Argon2id** for database unlock
+- Frontend: **React** + **Vite**
+- No telemetry, no analytics, no external connections unless explicitly configured
+
+---
+
+## Build from source
+
+```bash
+npm install
+npm run tauri build -- --bundles dmg,app          # macOS
+npm run tauri build -- --bundles deb,appimage      # Linux
+npm run tauri build -- --bundles nsis,msi          # Windows
+```
 
 ---
 
 ## License
 
-Proprietary. See [LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md).
+Proprietary. See [LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md).  
 One license per purchased seat. Not for redistribution.
-
-
-## Cross-Platform Build System
-
-This module uses the standardized Linus AI `build.sh` pipeline for seamless compilation across environments.
-
-```bash
-# Build for your specific target architecture
-./build.sh macos-arm64
-./build.sh windows-x86_64
-./build.sh linux-x86_64
-./build.sh web
-```
-
-**Features:**
-- Automatically maps `macos-arm64` to `aarch64-apple-darwin` for Rust targets.
-- Falls back to `npm ci` or `npm install` if `node_modules` is missing.
-- Utilizes local `npx tauri build` to prevent global CLI version mismatches.
-
-
-## Deployment Modes & Enterprise Licensing
-
-Linus BizCore supports two distinct runtime environments, controlled via the UI at launch:
-1. **Demo Mode:** Bypasses authentication and loads comprehensive mock data for demonstrations.
-2. **Real Mode:** Initializes with a clean slate and requires an Enterprise License Key to provision the root administrator.
-
-**RBAC Tier Mapping:**
-- `LNBC-ENT*` → Super Admin (Full Ecosystem Access)
-- `LNBC-PRO*` → Operations Manager (Pro Features)
-- `LNBC-GRW*` → Finance Controller (Growth Features)
-- `LNBC-STR*` → Staff Member (Core Features)
-
-Network-aware capabilities are natively integrated; the application dynamically exposes a link to the `linus-ai` personal apps dashboard via local DNS (`http://linus-ai.local:1420`) upon license validation.
