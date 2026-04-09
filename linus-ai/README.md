@@ -28,11 +28,11 @@ Go to **[Releases — v4.0.0](https://github.com/miryala3/linus-ai-public/releas
 
 | Platform | File |
 |---|---|
-| Mac (Apple Silicon — M1/M2/M3/M4) | [`linus-ai-4.0.0-headless-macos-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-macos-arm64) |
-| Mac (Intel) | [`linus-ai-4.0.0-headless-macos-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-macos-x86_64) |
-| Linux 64-bit | [`linus-ai-4.0.0-headless-linux-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-linux-x86_64) |
-| Linux ARM (Raspberry Pi / server) | [`linus-ai-4.0.0-headless-linux-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-linux-arm64) |
-| Windows 64-bit | [`linus-ai-4.0.0-headless-windows-x86_64.exe`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-windows-x86_64.exe) |
+| Mac (Apple Silicon — M1/M2/M3/M4) | [`linus-ai-v4.0.0-headless-macos-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-v4.0.0-headless-macos-arm64) |
+| Mac (Intel) | [`linus-ai-v4.0.0-headless-macos-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-v4.0.0-headless-macos-x86_64) |
+| Linux 64-bit | [`linus-ai-v4.0.0-headless-linux-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-v4.0.0-headless-linux-x86_64) |
+| Linux ARM (Raspberry Pi / server) | [`linus-ai-v4.0.0-headless-linux-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-v4.0.0-headless-linux-arm64) |
+| Windows 64-bit | [`linus-ai-v4.0.0-headless-windows-x86_64.exe`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-v4.0.0-headless-windows-x86_64.exe) |
 | Checksums | [`SHA256SUMS.txt`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/SHA256SUMS.txt) |
 
 ---
@@ -42,9 +42,9 @@ Go to **[Releases — v4.0.0](https://github.com/miryala3/linus-ai-public/releas
 ### Mac
 
 ```bash
-chmod +x linus-ai-4.0.0-headless-macos-arm64
-xattr -d com.apple.quarantine linus-ai-4.0.0-headless-macos-arm64
-./linus-ai-4.0.0-headless-macos-arm64
+chmod +x linus-ai-v4.0.0-headless-macos-arm64
+xattr -d com.apple.quarantine linus-ai-v4.0.0-headless-macos-arm64
+./linus-ai-v4.0.0-headless-macos-arm64
 ```
 
 If macOS still blocks it: **System Settings → Privacy & Security → Open Anyway**
@@ -52,8 +52,8 @@ If macOS still blocks it: **System Settings → Privacy & Security → Open Anyw
 ### Linux
 
 ```bash
-chmod +x linus-ai-4.0.0-headless-linux-x86_64
-./linus-ai-4.0.0-headless-linux-x86_64
+chmod +x linus-ai-v4.0.0-headless-linux-x86_64
+./linus-ai-v4.0.0-headless-linux-x86_64
 ```
 
 ### Windows

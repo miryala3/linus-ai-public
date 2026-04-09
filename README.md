@@ -56,27 +56,27 @@ Private AI that runs entirely on your hardware — no cloud, no telemetry, no Py
 
 | Platform | File |
 |---|---|
-| Linux x86_64 | [`linus-ai-4.0.0-headless-linux-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-linux-x86_64) |
-| Linux arm64 (Raspberry Pi / server) | [`linus-ai-4.0.0-headless-linux-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-linux-arm64) |
-| macOS arm64 (Apple Silicon) | [`linus-ai-4.0.0-headless-macos-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-macos-arm64) |
-| macOS x86_64 (Intel) | [`linus-ai-4.0.0-headless-macos-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-macos-x86_64) |
-| Windows x86_64 | [`linus-ai-4.0.0-headless-windows-x86_64.exe`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-4.0.0-headless-windows-x86_64.exe) |
+| Linux x86_64 | [`linus-ai-v4.0.0-headless-linux-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-v4.0.0-headless-linux-x86_64) |
+| Linux arm64 (Raspberry Pi / server) | [`linus-ai-v4.0.0-headless-linux-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-v4.0.0-headless-linux-arm64) |
+| macOS arm64 (Apple Silicon) | [`linus-ai-v4.0.0-headless-macos-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-v4.0.0-headless-macos-arm64) |
+| macOS x86_64 (Intel) | [`linus-ai-v4.0.0-headless-macos-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-v4.0.0-headless-macos-x86_64) |
+| Windows x86_64 | [`linus-ai-v4.0.0-headless-windows-x86_64.exe`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/linus-ai-v4.0.0-headless-windows-x86_64.exe) |
 | Checksums | [`SHA256SUMS.txt`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.0/SHA256SUMS.txt) |
 
 ### Install
 
 **macOS**
 ```bash
-chmod +x linus-ai-4.0.0-headless-macos-arm64
-xattr -d com.apple.quarantine linus-ai-4.0.0-headless-macos-arm64
-./linus-ai-4.0.0-headless-macos-arm64
+chmod +x linus-ai-v4.0.0-headless-macos-arm64
+xattr -d com.apple.quarantine linus-ai-v4.0.0-headless-macos-arm64
+./linus-ai-v4.0.0-headless-macos-arm64
 ```
 > If macOS blocks it: **System Settings → Privacy & Security → Open Anyway**
 
 **Linux**
 ```bash
-chmod +x linus-ai-4.0.0-headless-linux-x86_64
-./linus-ai-4.0.0-headless-linux-x86_64
+chmod +x linus-ai-v4.0.0-headless-linux-x86_64
+./linus-ai-v4.0.0-headless-linux-x86_64
 ```
 
 **Windows** — Download and run the `.exe`. Click "More info → Run anyway" if SmartScreen appears.
