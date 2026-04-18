@@ -12,8 +12,8 @@
 | Product | Description | Platform | Latest | Price from |
 |---|---|---|---|---|
 | **[LINUS-AI](#linus-ai-v402)** | Private distributed AI platform | macOS · Linux · Windows | v4.0.2 | Free |
-| **[LINUS BizCore](#linus-bizcore-v402)** | Local-first business OS | macOS · Linux | v4.0.2 | $199 |
-| **[BizCore Extension](#linus-bizcore-extension-v402)** | Browser AI for business apps | Chrome · Edge · Firefox | v4.0.2 | Free w/ BizCore |
+| **[LINUS BizCore](#linus-bizcore-v400)** | Local-first business OS | macOS · Linux | v4.0.0 | $199 |
+| **[BizCore Extension](#linus-bizcore-extension-v400)** | Browser AI for business apps | Chrome · Edge · Firefox | v4.0.0 | Free w/ BizCore |
 | **[LINUS-AI Medical](#linus-ai-medical-server-v402)** | HIPAA-compliant AI server | macOS · Linux | v4.0.2 | $1,499 |
 | **[aiMED Extension](#aimed-extension-v402)** | Clinical AI for healthcare practices | Chrome · Edge · Firefox | v4.0.2 | $299/yr |
 
@@ -52,7 +52,7 @@ Private AI that runs entirely on your hardware — no cloud, no telemetry, no Py
 | Professional — $499 | [Pay $499](https://www.paypal.com/ncp/payment/NMFSELLNG7X7U) |
 | Team — $1,499 | [Pay $1,499](https://www.paypal.com/ncp/payment/RRHAWGNKDQL5A) |
 | Enterprise — $7,999/yr | [Pay $7,999](https://www.paypal.com/ncp/payment/Z5J9RLR3YT6RA) |
-| Enterprise Plus — $14,999/yr | [Contact sales](mailto:support@linus-ai.com?subject=Enterprise%20Plus%20Enquiry) |
+| Enterprise Plus — $14,999/yr | [Subscribe at linus-ai.com/store](https://linus-ai.com/store) |
 
 ### Download
 
@@ -91,7 +91,7 @@ Community tier is free and starts immediately — no key needed.
 
 ---
 
-## LINUS BizCore v4.0.2
+## LINUS BizCore v4.0.0
 
 Local-first business OS for small businesses — one app for everything, no SaaS fees.
 
@@ -124,33 +124,33 @@ Local-first business OS for small businesses — one app for everything, no SaaS
 
 | Platform | File |
 |---|---|
-| macOS arm64 (Apple Silicon) | [`LINUS-BizCore_4.0.2_aarch64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.2/LINUS-BizCore_4.0.2_aarch64.dmg) |
-| Linux x86_64 (deb) | [`LINUS-BizCore_4.0.2_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.2/LINUS-BizCore_4.0.2_amd64.deb) |
-| Linux x86_64 (AppImage) | [`LINUS-BizCore_4.0.2_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.2/LINUS-BizCore_4.0.2_amd64.AppImage) |
+| macOS arm64 (Apple Silicon) | [`bizcore-LINUS-BizCore_4.0.0_aarch64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/bizcore-LINUS-BizCore_4.0.0_aarch64.dmg) |
+| Linux x86_64 (deb) | [`bizcore-LINUS-BizCore_4.0.0_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/bizcore-LINUS-BizCore_4.0.0_amd64.deb) |
+| Linux x86_64 (AppImage) | [`bizcore-LINUS-BizCore_4.0.0_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/bizcore-LINUS-BizCore_4.0.0_amd64.AppImage) |
 
 ### Install
 
 **macOS**
 ```bash
-xattr -d com.apple.quarantine LINUS-BizCore_4.0.2_aarch64.dmg
+xattr -d com.apple.quarantine bizcore-LINUS-BizCore_4.0.0_aarch64.dmg
 ```
 Then double-click the DMG, drag BizCore to Applications, right-click → Open on first launch.
 
 **Linux (deb)**
 ```bash
 sudo apt-get install -y libwebkit2gtk-4.1-0 libgtk-3-0 libayatana-appindicator3-1 librsvg2-2
-sudo dpkg -i LINUS-BizCore_4.0.2_amd64.deb
+sudo dpkg -i bizcore-LINUS-BizCore_4.0.0_amd64.deb
 ```
 
 **Linux (AppImage)**
 ```bash
-chmod +x LINUS-BizCore_4.0.2_amd64.AppImage
-./LINUS-BizCore_4.0.2_amd64.AppImage
+chmod +x bizcore-LINUS-BizCore_4.0.0_amd64.AppImage
+./bizcore-LINUS-BizCore_4.0.0_amd64.AppImage
 ```
 
 ---
 
-## LINUS BizCore Extension v4.0.2
+## LINUS BizCore Extension v4.0.0
 
 AI business assistant in your browser — works inside QuickBooks, Xero, Stripe, HubSpot, Salesforce, Gmail, and Outlook.
 
@@ -174,11 +174,11 @@ Requires LINUS-AI (port 9480) or BizCore running on your machine or LAN. One Lic
 
 | Browser | File |
 |---|---|
-| Chrome | [`bizcore-chrome-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.2/bizcore-chrome-v4.0.2.zip) |
-| Edge | [`bizcore-edge-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.2/bizcore-edge-v4.0.2.zip) |
-| Brave | [`bizcore-brave-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.2/bizcore-brave-v4.0.2.zip) |
-| Opera | [`bizcore-opera-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.2/bizcore-opera-v4.0.2.zip) |
-| Firefox | [`bizcore-firefox-v4.0.2.xpi`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.2/bizcore-firefox-v4.0.2.xpi) |
+| Chrome | [`bizcore-ext-bizcore-chrome-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-ext-bizcore-chrome-v4.0.0.zip) |
+| Edge | [`bizcore-ext-bizcore-edge-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-ext-bizcore-edge-v4.0.0.zip) |
+| Brave | [`bizcore-ext-bizcore-brave-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-ext-bizcore-brave-v4.0.0.zip) |
+| Opera | [`bizcore-ext-bizcore-opera-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-ext-bizcore-opera-v4.0.0.zip) |
+| Firefox | [`bizcore-ext-bizcore-firefox-v4.0.0.xpi`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-ext-bizcore-firefox-v4.0.0.xpi) |
 
 ### Install
 
@@ -209,21 +209,21 @@ HIPAA-compliant private AI server for hospitals, clinics, and healthcare network
 |---|---|---|
 | **Clinic** | 25 | $1,499 one-time |
 | **Hospital** | 500 | $9,999 one-time |
-| **Health System** | Unlimited | Contact sales |
+| **Health System** | Unlimited | $99,999 one-time |
 
 | Buy | Link |
 |---|---|
 | Clinic — $1,499 | [Pay $1,499](https://www.paypal.com/ncp/payment/AK3Q7XPYMMY3S) |
 | Hospital — $9,999 | [Pay $9,999](https://www.paypal.com/ncp/payment/DAJ5PCGUVGHNW) |
-| Health System — $9,999 | [Pay $99,999](https://www.paypal.com/ncp/payment/T6TA8NZTNLZ7S) |
+| Health System — $99,999 | [Pay $99,999](https://www.paypal.com/ncp/payment/T6TA8NZTNLZ7S) |
 
 ### Download
 
 | Platform | File |
 |---|---|
-| macOS arm64 (Apple Silicon) | [`linus-ai-med-4.0.2-aarch64-apple-darwin.tar.gz`](https://github.com/miryala3/linus-ai-public/releases/download/med-v4.0.2/linus-ai-med-4.0.2-aarch64-apple-darwin.tar.gz) |
-| Linux x86_64 | [`linus-ai-med-4.0.2-x86_64-unknown-linux-gnu.tar.gz`](https://github.com/miryala3/linus-ai-public/releases/download/med-v4.0.2/linus-ai-med-4.0.2-x86_64-unknown-linux-gnu.tar.gz) |
-| Linux arm64 | [`linus-ai-med-4.0.2-aarch64-unknown-linux-gnu.tar.gz`](https://github.com/miryala3/linus-ai-public/releases/download/med-v4.0.2/linus-ai-med-4.0.2-aarch64-unknown-linux-gnu.tar.gz) |
+| macOS arm64 (Apple Silicon) | [`med-linus-ai-med-4.0.2-aarch64-apple-darwin.tar.gz`](https://github.com/miryala3/linus-ai-public/releases/download/med-v4.0.2/med-linus-ai-med-4.0.2-aarch64-apple-darwin.tar.gz) |
+| Linux x86_64 | [`med-linus-ai-med-4.0.2-x86_64-unknown-linux-gnu.tar.gz`](https://github.com/miryala3/linus-ai-public/releases/download/med-v4.0.2/med-linus-ai-med-4.0.2-x86_64-unknown-linux-gnu.tar.gz) |
+| Linux arm64 | [`med-linus-ai-med-4.0.2-aarch64-unknown-linux-gnu.tar.gz`](https://github.com/miryala3/linus-ai-public/releases/download/med-v4.0.2/med-linus-ai-med-4.0.2-aarch64-unknown-linux-gnu.tar.gz) |
 
 ### Install
 
@@ -279,11 +279,11 @@ Clinical AI assistant for healthcare practices — 8 workflow tabs running again
 
 | Browser | File |
 |---|---|
-| Chrome | [`aiMED-chrome-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aiMED-chrome-v4.0.2.zip) |
-| Edge | [`aiMED-edge-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aiMED-edge-v4.0.2.zip) |
-| Brave | [`aiMED-brave-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aiMED-brave-v4.0.2.zip) |
-| Opera | [`aiMED-opera-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aiMED-opera-v4.0.2.zip) |
-| Firefox | [`aiMED-firefox-v4.0.2.xpi`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aiMED-firefox-v4.0.2.xpi) |
+| Chrome | [`aimed-ext-aiMED-chrome-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aimed-ext-aiMED-chrome-v4.0.2.zip) |
+| Edge | [`aimed-ext-aiMED-edge-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aimed-ext-aiMED-edge-v4.0.2.zip) |
+| Brave | [`aimed-ext-aiMED-brave-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aimed-ext-aiMED-brave-v4.0.2.zip) |
+| Opera | [`aimed-ext-aiMED-opera-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aimed-ext-aiMED-opera-v4.0.2.zip) |
+| Firefox | [`aimed-ext-aiMED-firefox-v4.0.2.xpi`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aimed-ext-aiMED-firefox-v4.0.2.xpi) |
 
 ### Install
 
