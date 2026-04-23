@@ -1,0 +1,23 @@
+[package]
+name = "linus_gui_linus_ai_public"
+version = "0.1.0"
+description = "Linus AI Public standardized GUI shell"
+authors = ["OpenAI Codex"]
+license = ""
+repository = ""
+edition = "2021"
+rust-version = "1.77.2"
+
+[lib]
+name = "linus_gui_linus_ai_public_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.5.3", features = [] }
+
+[dependencies]
+tauri = { version = "2.9.5", features = [] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[workspace]

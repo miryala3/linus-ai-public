@@ -1,0 +1,56 @@
+{
+  "slug": "linus-ai-public",
+  "title": "Linus AI Public",
+  "category": "Public Distribution",
+  "summary": "Public-facing distribution, licensing, and release collateral for the Linus AI platform.",
+  "standardizedAt": "2026-04-01",
+  "statusCards": [
+    {
+      "label": "Standardized GUI",
+      "value": "Enabled",
+      "detail": "Every project receives a consistent web workspace and Tauri 2 desktop shell in gui/."
+    },
+    {
+      "label": "Detected Web Surface",
+      "value": "None detected",
+      "detail": "No standalone HTML entrypoint was detected in the project root."
+    },
+    {
+      "label": "Detected Tauri Runtime",
+      "value": "None detected",
+      "detail": "The standardized shell adds a desktop runtime in gui/src-tauri."
+    },
+    {
+      "label": "Implementation Stack",
+      "value": "Static assets",
+      "detail": "No package scripts detected at the project root."
+    }
+  ],
+  "surfaces": [
+    {
+      "kind": "file",
+      "label": "Project Readme",
+      "path": "README.md",
+      "description": "Primary project documentation"
+    }
+  ],
+  "commands": [],
+  "runbook": [
+    {
+      "title": "Open the standardized web shell",
+      "description": "Use a lightweight static file server when you want a browser-friendly operator surface.",
+      "command": "cd linus-ai-public/gui && python3 -m http.server 8080"
+    },
+    {
+      "title": "Validate the Tauri desktop shell",
+      "description": "Compile the standardized Tauri 2 wrapper without changing the original project runtime.",
+      "command": "cargo check --manifest-path linus-ai-public/gui/src-tauri/Cargo.toml"
+    }
+  ],
+  "notes": [
+    "The gui/ shell is additive. It does not replace or rewrite the original product implementation.",
+    "Existing browser, desktop, backend, and documentation surfaces are mapped into this shell for operator visibility.",
+    "The Tauri desktop shell uses static assets from gui/ so teams can standardize packaging without forcing a framework migration first.",
+    "No root HTML surface was detected, so this shell becomes the first consistent GUI baseline for the repository."
+  ]
+}

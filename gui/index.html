@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linus Standardized GUI Shell</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="shell-bg" aria-hidden="true"></div>
+    <main id="main" class="layout">
+      <section class="hero" aria-labelledby="product-title">
+        <div class="eyebrow">Standardized Product Shell</div>
+        <h1 id="product-title">Loading product shell...</h1>
+        <p id="product-summary" class="hero-copy"></p>
+        <div id="hero-badges" class="badge-row" aria-label="Product metadata"></div>
+      </section>
+
+      <section class="panel-grid" aria-label="Overview panels">
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Workspace Status</h2>
+            <span class="panel-kicker">Professional baseline</span>
+          </div>
+          <div id="status-cards" class="status-grid"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Runbook</h2>
+            <span class="panel-kicker">Launch and packaging</span>
+          </div>
+          <div id="runbook" class="runbook"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Detected Interfaces</h2>
+          <span class="panel-kicker">Mapped from the existing repository</span>
+        </div>
+        <div id="surfaces" class="surface-list" role="list"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Project Commands</h2>
+          <span class="panel-kicker">Existing scripts and helpful entrypoints</span>
+        </div>
+        <div id="commands" class="command-list"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Notes</h2>
+          <span class="panel-kicker">What this shell standardizes</span>
+        </div>
+        <ul id="notes" class="notes-list"></ul>
+      </section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

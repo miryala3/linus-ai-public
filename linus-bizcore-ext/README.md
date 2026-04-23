@@ -1,184 +1,124 @@
-# LINUS-BizCore Extension
+# LINUS-BizCore Extension v4.0.0
 
-**AI business assistant in your browser — private, local, zero cloud.**
+**AI business assistant in your browser — works inside the tools you already use.**
 
 Version `4.0.0` · Chrome · Edge · Brave · Opera · Firefox
 
 > Part of the **[LINUS-AI Product Suite](https://github.com/miryala3/linus-ai-public#readme)**  
-> All downloads and purchase links: [github.com/miryala3/linus-ai-public](https://github.com/miryala3/linus-ai-public#readme)
+> Downloads and pricing: [github.com/miryala3/linus-ai-public](https://github.com/miryala3/linus-ai-public#readme)
 
-A browser extension companion for [LINUS-BizCore](../linus-bizcore). Brings LINUS-AI business intelligence directly into QuickBooks, Xero, Stripe, HubSpot, Salesforce, Gmail, and Outlook — powered by your local LINUS-AI server on port 9480.
-
----
-
-## Features
-
-| Tab | What it does |
-|---|---|
-| **💬 Chat** | General business AI chat — strategy, analysis, writing |
-| **📄 Invoice** | Draft invoices, review billing, write follow-up emails |
-| **🤝 CRM** | Customer insights, follow-up drafts, pipeline analysis |
-| **✅ Tasks** | Prioritize, break down projects, standup updates |
-| **📊 Accounting** | Expense categorization, P&L review, tax deduction checklist |
-| **🔍 Page Summary** | Summarize any page — action items, key figures, email draft |
-
-All tabs include an **Analyze Page** button that pulls the current page's content as context for the AI.
+The BizCore Extension brings private AI directly into QuickBooks, Xero, Stripe, HubSpot, Salesforce, Gmail, and Outlook — powered entirely by your local LINUS-AI server (port 9480). Nothing is sent to outside AI services.
 
 ---
 
-## Installation
+## What does it do?
 
-### From Releases (recommended)
+Open the extension panel while you're inside any supported business app and the AI automatically reads the page you're on. Ask it questions, get summaries, draft emails, or analyse data — all from within the tools you're already using.
 
-Download from **[GitHub Releases — latest](https://github.com/miryala3/linus-bizcore-ext/releases/latest)**:
+---
+
+## Download
+
+Go to **[Releases — v4.0.0](https://github.com/miryala3/linus-bizcore-ext/releases/latest)** and pick your browser.
 
 | Browser | File |
 |---|---|
-| Chrome | `bizcore-chrome-v4.0.0.zip` |
-| Edge | `bizcore-edge-v4.0.0.zip` |
-| Brave | `bizcore-brave-v4.0.0.zip` |
-| Opera | `bizcore-opera-v4.0.0.zip` |
-| Firefox | `bizcore-firefox-v4.0.0.xpi` |
+| Chrome | [`bizcore-chrome-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-chrome-v4.0.0.zip) |
+| Edge | [`bizcore-edge-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-edge-v4.0.0.zip) |
+| Brave | [`bizcore-brave-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-brave-v4.0.0.zip) |
+| Opera | [`bizcore-opera-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-opera-v4.0.0.zip) |
+| Firefox | [`bizcore-firefox-v4.0.0.xpi`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-firefox-v4.0.0.xpi) |
 
-**Chrome / Edge / Brave / Opera:**
+### Install on Chrome / Edge / Brave / Opera
+
 1. Unzip the `.zip` file
 2. Open `chrome://extensions` (or `edge://extensions`, etc.)
-3. Enable **Developer mode** → **Load unpacked** → select the unzipped folder
+3. Enable **Developer mode** (top right toggle)
+4. Click **Load unpacked** → select the unzipped folder
 
-**Firefox:**
+### Install on Firefox
+
 1. Open `about:addons`
 2. Click the gear icon → **Install Add-on From File**
 3. Select the `.xpi` file
 
-### Verify integrity
+---
 
-```bash
-sha256sum -c SHA256SUMS.txt
-```
+## Pricing
+
+| Option | Price | Link |
+|---|---|---|
+| **Free with any BizCore desktop license** | Included | See [BizCore](../linus-bizcore/) |
+| Extension only (no desktop app needed) | $99 one-time | [Pay $99](https://www.paypal.com/ncp/payment/FLRGDB82RZ86E) |
+| BizCore + Extension bundle | $299 one-time | [Pay $299](https://www.paypal.com/ncp/payment/VNFMWHE2UQ9AE) |
+
+Pay via PayPal → email **support@linus-ai.com** with your receipt → receive license key within 1 business day.
 
 ---
 
 ## Setup
 
-1. **Start LINUS-AI server** on your machine or LAN (port 9480):
-   ```bash
-   ./linus-ai-linux-x86_64      # Linux
-   # or open LINUS-AI.app       # macOS
-   ```
-
-2. **Open extension settings** — click the extension icon → ⚙ Settings
-
-3. **Choose backend:**
-   - **LINUS-AI (LAN)** — connects to `http://localhost:9480` (or any LAN node)
-   - **Linus AI** — connects to `http://localhost:9480`
-
-4. **Test connection** — click "Test connection" to verify
-
-5. **Scan LAN** — automatically discovers LINUS-AI nodes on your local network
+1. **Start LINUS-AI** on your machine or LAN (port 9480)
+2. Click the extension icon → **⚙ Settings**
+3. Set your server address (default: `http://localhost:9480`)
+4. Click **Test Connection** to confirm it's working
+5. Optionally: click **Scan Network** to find LINUS-AI running on other machines on your LAN
 
 ---
 
-## How It Works
+## What you can do (User features)
 
-```
-Browser Extension
-  │
-  ├── Side Panel (React)
-  │     ├── Chat · Invoice · CRM · Tasks · Accounting · Page tabs
-  │     └── Reads page content from active tab via content scripts
-  │
-  ├── Content Scripts
-  │     ├── biz-reader.js  — QuickBooks, Xero, Stripe, HubSpot, Salesforce
-  │     └── dom-extractor.js  — Gmail, Outlook, general pages
-  │
-  └── LINUS-AI Server (your machine/LAN)
-        POST /infer/stream  → SSE token stream
-        GET  /health        → connectivity check
-        GET  /models        → available models
-```
+| Tab | What it does |
+|---|---|
+| **Chat** | General business AI — strategy, analysis, writing, research |
+| **Invoice** | Draft invoices, review billing, write payment follow-up emails |
+| **CRM** | Customer insights, follow-up drafts, pipeline review |
+| **Tasks** | Prioritise and break down projects, write standup updates |
+| **Accounting** | Categorise expenses, review P&L, build a tax deduction checklist |
+| **Page Summary** | Summarise any open page into action items, key numbers, or a draft email |
 
-The extension never contacts external servers. All AI inference runs on your local LINUS-AI server.
+Every tab has an **Analyse Page** button that pulls the content from the page you're currently on and uses it as context for the AI.
 
----
+## Works with these apps
 
-## Supported Platforms
-
-| App | Content extraction | Context-aware AI |
+| App | What it reads | AI assistance |
 |---|---|---|
-| QuickBooks | ✓ | ✓ |
-| Xero | ✓ | ✓ |
-| FreshBooks | ✓ | ✓ |
-| Stripe Dashboard | ✓ | ✓ |
-| HubSpot | ✓ | ✓ |
-| Salesforce | ✓ | ✓ |
-| Gmail | ✓ (text) | ✓ |
-| Outlook | ✓ (text) | ✓ |
-| Any webpage | ✓ (Page tab) | ✓ |
-
----
-
-## Build from Source
-
-**Prerequisites:** Node.js 20+
-
-```bash
-npm install
-
-# Development build
-npm run build
-
-# Package all 5 browsers
-npm run build:ext
-# Output: packages/bizcore-{chrome,edge,brave,opera,firefox}-v4.0.0.{zip,xpi}
-```
-
-### CI/CD
-
-Tagged pushes (`v*.*.*`) trigger a GitHub Actions release that packages all browsers and publishes them. Build time: ~30 seconds on `ubuntu-22.04`.
+| QuickBooks | Invoices, accounts, transactions | ✓ |
+| Xero | Same | ✓ |
+| FreshBooks | Same | ✓ |
+| Stripe Dashboard | Payments, customers | ✓ |
+| HubSpot | Contacts, deals, pipelines | ✓ |
+| Salesforce | Accounts, opportunities | ✓ |
+| Gmail | Email text | ✓ |
+| Outlook | Email text | ✓ |
+| Any webpage | Page text | ✓ (via Page Summary tab) |
 
 ---
 
 ## Privacy
 
-- Zero telemetry
-- No external API calls (all inference is local)
+- The extension never contacts external AI servers
+- All AI processing happens on your own LINUS-AI server
+- Page content is only sent to your local machine — never stored externally
 - No account required
-- Page content stays on your machine — sent only to your local LINUS-AI server
+- No telemetry
 
 ---
 
-## Purchase
+## For developers — build from source
 
-Included free with any **LINUS BizCore** desktop license. If you only want the extension:
+```bash
+npm install
+npm run build              # development build → dist/
+npm run build:ext          # package all 5 browsers → packages/
+# Output: packages/bizcore-{chrome,edge,brave,opera,firefox}-v4.0.0.{zip,xpi}
+```
 
-| Option | Price | Link |
-|---|---|---|
-| Extension only | $99 one-time | [Pay $99](https://www.paypal.com/ncp/payment/FLRGDB82RZ86E) |
-| BizCore + Extension bundle | $299 one-time | [Pay $299](https://www.paypal.com/ncp/payment/VNFMWHE2UQ9AE) |
-
-After payment, email **support@linus-ai.com** with your order confirmation — your license key will be delivered within 1 business day.
+Tagged pushes (`v*.*.*`) trigger a GitHub Actions release that packages all browsers automatically. Build time: ~30 seconds.
 
 ---
 
 ## License
 
-Proprietary — © 2026 LINUS-AI. All rights reserved.
-Part of the LINUS-AI product suite. See [linus-ai.com](https://linus-ai.com) for licensing.
-
-
-## Cross-Platform Build System
-
-This module uses the standardized Linus AI `build.sh` pipeline for seamless compilation across environments.
-
-```bash
-# Build for your specific target architecture
-./build.sh macos-arm64
-./build.sh windows-x86_64
-./build.sh linux-x86_64
-./build.sh web
-```
-
-**Features:**
-- Automatically maps `macos-arm64` to `aarch64-apple-darwin` for Rust targets.
-- Falls back to `npm ci` or `npm install` if `node_modules` is missing.
-- Utilizes local `npx tauri build` to prevent global CLI version mismatches.
+Proprietary — © 2026 LINUS-AI. All rights reserved.  
+See [linus-ai.com](https://linus-ai.com) for licensing details.

@@ -1,0 +1,26 @@
+{
+  "productName": "Linus AI Public GUI",
+  "version": "0.1.0",
+  "identifier": "com.linus.standardized.linus-ai-public",
+  "build": {
+    "frontendDist": ".."
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Linus AI Public GUI",
+        "width": 1440,
+        "height": 920,
+        "minWidth": 1100,
+        "minHeight": 760,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": false
+  }
+}

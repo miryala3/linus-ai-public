@@ -1,259 +1,149 @@
-# aiMED v3 — Medical AI Assistant
+# aiMED Extension v4.0.0
 
-> Private, local AI back-office team for healthcare practices.
-> **100% local AI. No PHI leaves your network.**
+**Clinical AI for healthcare practices — 8 workflow tools, all running on your local server. No PHI leaves your network.**
 
 [![Version](https://img.shields.io/badge/version-4.0.0-blue)](CHANGELOG)
-[![Stack](https://img.shields.io/badge/stack-React%20%7C%20Tailwind%20%7C%20Rust%2FWASM-purple)](README.md)
-[![Browsers](https://img.shields.io/badge/browsers-Edge%20%7C%20Chrome%20%7C%20Firefox%20%7C%20Brave%20%7C%20Opera-orange)](README.md)
+[![Browsers](https://img.shields.io/badge/browsers-Chrome%20%7C%20Edge%20%7C%20Brave%20%7C%20Opera%20%7C%20Firefox-orange)](README.md)
+[![HIPAA](https://img.shields.io/badge/HIPAA-compatible-blue)](README.md)
 
 > Part of the **[LINUS-AI Product Suite](https://github.com/miryala3/linus-ai-public#readme)**  
-> All downloads and purchase links: [github.com/miryala3/linus-ai-public](https://github.com/miryala3/linus-ai-public#readme)
+> Downloads and pricing: [github.com/miryala3/linus-ai-public](https://github.com/miryala3/linus-ai-public#readme)
 
 ---
 
-## Tech Stack
+## What does it do?
 
-| Layer | Technology |
+The aiMED Extension adds eight clinical AI tools directly to your browser. While you're working in your EMR, viewing a lab result, or handling patient messages, the AI is right there — reading the current page with your permission and providing clinical assistance without sending anything to a cloud AI service.
+
+All AI processing runs on LINUS-AI Medical Server installed in your facility. No PHI ever leaves your network.
+
+> **aiMED license holders get LINUS-AI Professional included free.**  
+> Email support@linus-ai.com with your aiMED order to claim a LNAI-PRO key.
+
+---
+
+## Download
+
+Go to **[Releases — latest](https://github.com/miryala3/linus-aiMED-ext/releases/latest)** and pick your browser.
+
+| Browser | File |
 |---|---|
-| **Frontend** | React 18 + Tailwind CSS (dark medical theme) |
-| **Bundler** | Vite 5 (multi-entry: sidepanel / options / popup) |
-| **AI Engine** | Linus AI (local only — no cloud AI) |
-| **Logic Protection** | Rust → WebAssembly (`wasm-bindgen`) |
-| **Auth / Payments** | Supabase (Auth + PostgreSQL + RLS) + Stripe |
-| **Browser Support** | MV3: Edge, Chrome, Brave, Opera | MV2: Firefox |
+| Chrome | [`aiMED-chrome-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.0/aiMED-chrome-v4.0.0.zip) |
+| Edge | [`aiMED-edge-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.0/aiMED-edge-v4.0.0.zip) |
+| Brave | [`aiMED-brave-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.0/aiMED-brave-v4.0.0.zip) |
+| Opera | [`aiMED-opera-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.0/aiMED-opera-v4.0.0.zip) |
+| Firefox | [`aiMED-firefox-v4.0.0.xpi`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.0/aiMED-firefox-v4.0.0.xpi) |
+
+### Install on Chrome / Edge / Brave / Opera
+
+1. Unzip the `.zip` file
+2. Open `chrome://extensions` (or `edge://extensions`, etc.)
+3. Enable **Developer mode** → **Load unpacked** → select the unzipped folder
+
+### Install on Firefox
+
+1. Open `about:addons` → gear icon → **Install Add-on From File** → select `.xpi`
 
 ---
 
-## Clinical Workflows (8 Tabs)
+## Pricing
 
-| Tab | Workflow | AI Capability |
-|---|---|---|
-| 🏥 Chart Summary | Live EMR → clinical brief | HEDIS gaps, HCC flags, MDM awareness |
-| 📄 Pre-Charter | PDF/text → 1-page visit brief | Trajectory (IMPROVING/STABLE/DECLINING) |
-| 💬 Inbox Zero | Portal message → triage + draft | 🚨URGENT/⚠️SAME-DAY/📋ROUTINE with safety-net phrases |
-| 💰 Billing Optimizer | SOAP note → ICD-10 + CPT + HCC | Full MDM scoring, ZPIC/RAC audit defensibility |
-| 📖 Patient Educator | Diagnosis → patient handout | 20 languages, teach-back questions, "call if" thresholds |
-| 🔧 Quick Tools | Drug Interaction, Diff Dx, Prior Auth, Referral | Specialist-grade clinical reasoning |
-| 🏛️ Insurance Verify | Payer portal capture + AI analysis | 30+ payers, live benefit data extraction |
-| 💡 SuggestCare | Evidence-based care gaps | ASCVD, CHA₂DS₂-VASc, CKD-EPI risk scores |
+| Plan | Devices | Price | Link |
+|---|---|---|---|
+| **Solo Practice** | 2 | $299/yr | [Pay $299](https://www.paypal.com/ncp/payment/59YHJD9W2RYYE) |
+| **Small Practice** | 10 | $799/yr | [Pay $799](https://www.paypal.com/ncp/payment/BZPJUT2U5HSMG) |
+| **Group Practice** | Unlimited | $1,999/yr | [Pay $1,999](https://www.paypal.com/ncp/payment/NHK2TN4D9YV9S) |
+| **Health System** | Unlimited | $9,999/yr | [Pay $9,999](https://www.paypal.com/ncp/payment/CL6363REEN72E) |
+
+Pay via PayPal → email **support@linus-ai.com** with your receipt → receive license key within 1 business day.
+
+**14-day free trial — no key needed to start.**
+
+> **aiMED subscribers also receive LINUS-AI Professional free.** Email us with your aiMED order to claim it.
 
 ---
 
-## Licensing (Account-Based)
+## Setup
 
-No license keys — sign in with your account.
+### 1. Install LINUS-AI Medical Server
 
-| Tier | Price | Max Devices |
-|---|---|---|
-| **Solo Practice** | $299/yr | 2 |
-| **Small Practice** | $799/yr | 10 |
-| **Group Practice** | $1,999/yr | Unlimited |
+Download from [linus-ai-med](../linus-ai-med/) and run it in your facility. It runs on port 9500 by default.
 
-14-day free trial — no credit card required.
+Alternatively, connect to a standard LINUS-AI server (port 9480) for non-HIPAA workflows.
 
-**Buy now via PayPal:**
+### 2. Download medical AI models
 
-| Tier | Link |
+```bash
+# Recommended primary model (4.9 GB, strong clinical reasoning)
+linus_ai --model-dir ~/models models   # then download Med42-8B or Med42-70B via the UI
+```
+
+### 3. Connect the extension
+
+1. Click the extension icon → **⚙ Settings → LLM Connection**
+2. Set endpoint: `http://localhost:9480` (or your server's IP)
+3. Select a model and click **Test Connection**
+
+### 4. Enter your license key
+
+Settings → **Account & License** → paste your `LNAM-*` key → Activate
+
+---
+
+## The 8 clinical workflow tools (User features)
+
+| Tool | What it does |
 |---|---|
-| Solo Practice — $299/yr | [Pay $299](https://www.paypal.com/ncp/payment/59YHJD9W2RYYE) |
-| Small Practice — $799/yr | [Pay $799](https://www.paypal.com/ncp/payment/BZPJUT2U5HSMG) |
-| Group Practice — $1,999/yr | [Pay $1,999](https://www.paypal.com/ncp/payment/NHK2TN4D9YV9S) |
-
-**Flow:**
-1. Subscribe above (Stripe Checkout)
-2. Sign in with the email used at checkout
-3. Open extension → Options → Sign In
-4. Extension verifies your license automatically
-
-**Copy protection:** Rust WASM handles fingerprinting and JWT claim validation. Machine limits enforced server-side via Supabase Row Level Security. Supabase manages token refresh automatically.
+| **Chart Summary** | Reads the current EMR page and produces a clinical brief with HEDIS gap flags and HCC codes highlighted |
+| **Pre-Charter** | Paste or upload a patient PDF/note and get a one-page visit summary with an improvement/stable/declining trajectory assessment |
+| **Inbox Zero** | Paste a patient portal message and get a triage label (🚨 URGENT / ⚠️ SAME-DAY / 📋 ROUTINE) plus a drafted reply with safety-net language |
+| **Billing Optimizer** | Paste a SOAP note and get ICD-10 codes, CPT codes, HCC flags, and MDM scoring with audit-defensible reasoning |
+| **Patient Educator** | Enter a diagnosis and get a patient-ready handout in any of 20 languages, with teach-back questions and "call if..." thresholds |
+| **Quick Tools** | Drug interaction checker, differential diagnosis, prior authorisation drafts, specialist referral letters |
+| **Insurance Verify** | Captures the current insurance/payer portal page and analyses it — works with 30+ payers |
+| **SuggestCare** | Identifies evidence-based care gaps with ASCVD, CHA₂DS₂-VASc, and CKD-EPI risk scores for the current patient context |
 
 ---
 
-## Prerequisites
+## EMR and payer compatibility
 
-### 1. Install Linus AI
-Download from [linus.com](https://linus.com).
+The extension reads content from these platforms automatically when they are open:
 
-### 2. Download Medical AI Models
-```bash
-# Primary — Best medical reasoning (4.9 GB, USMLE 82.9%)
-linus pull m42labs/med42-v2:8b-q4_K_M
-
-# Secondary — Patient education (4.1 GB)
-linus pull biomistral:7b-q4_K_M
-```
-
-### 3. Start Linus AI
-```bash
-LINUS_NUM_PARALLEL=1 LINUS_MAX_LOADED_MODELS=1 linus serve
-
-# Multi-machine LAN setup
-LINUS_HOST=0.0.0.0:9480 LINUS_NUM_PARALLEL=1 linus serve
-```
+| System | Type |
+|---|---|
+| Epic | EMR |
+| Athenahealth | EMR |
+| Cerner (Oracle Health) | EMR |
+| Allscripts | EMR |
+| eClinicalWorks | EMR |
+| Practice Fusion | EMR |
+| NextGen | EMR |
+| Kareo | EMR |
+| AdvancedMD | EMR |
+| 30+ insurance payer portals | Insurance |
 
 ---
 
-## Development Setup
+## Privacy and compliance
 
-### Prerequisites
-- Node.js 18+
-- Rust + cargo (`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`)
-- wasm-pack (`cargo install wasm-pack`)
+- All AI runs on your LINUS-AI Medical Server — no PHI sent to cloud AI
+- No internet connection required for AI workflows after model download
+- Session history is cleared when the browser restarts
+- License validation sends only a hashed device identifier — no PHI, no personal data
+- Compatible with HIPAA local-processing workflows
 
-### Install
-```bash
-cd aiMED-v3
-cp .env.example .env
-# Edit .env — add your Supabase URL and anon key
-npm install
-```
-
-### Build WASM (once, or when wasm/src/lib.rs changes)
-```bash
-npm run wasm:build
-# Output: wasm/pkg/
-```
-
-### Development build
-```bash
-npm run build
-# Output: dist/
-```
-
-### Full build + browser packages
-```bash
-bash scripts/build.sh
-# Output: dist/ + packages/
-```
+> **Disclaimer:** aiMED provides clinical decision support only. All AI outputs must be reviewed by a licensed clinician before any clinical or billing use.
 
 ---
 
-## Load Extension
+## Account management
 
-### Edge / Chrome / Brave / Opera
-1. Open `edge://extensions` (or `chrome://extensions`)
-2. Enable **Developer mode**
-3. Click **Load unpacked** → select `dist/`
-
-### Firefox
-1. Open `about:debugging` → This Firefox
-2. Click **Load Temporary Add-on**
-3. Select `dist/manifest-firefox.json`
-
----
-
-## Configuration
-
-### Step 1 — Connect Linus AI
-1. Open extension → ⚙️ Settings → **LLM Connection**
-2. Set endpoint: `http://localhost:9480`
-3. Set model: `m42labs/med42-v2:8b-q4_K_M`
-4. Click **Test Connection** → ✅ Connected!
-
-### Step 2 — Sign In
-1. Settings → **Account & License** (or sign in from the side panel)
-2. Enter email + password
-3. License tier and device count appear automatically
-
-### Step 3 — Scan Your Network (optional)
-Settings → LLM Connection → **🔍 Scan Network**
-Discovers Linus AI instances on your LAN and recommends models based on total available RAM.
-
----
-
-## Supabase Setup (operators only)
-
-See [ADMIN.md](ADMIN.md) for full setup instructions.
-
-Quick overview:
-```bash
-# Install Supabase CLI
-npm install -g supabase
-
-# Login and link project
-supabase login
-supabase link --project-ref YOUR_PROJECT_ID
-
-# Apply database schema
-supabase db push
-
-# Deploy Edge Functions
-supabase functions deploy stripe-checkout
-supabase functions deploy stripe-webhook
-
-# Set Edge Function secrets
-supabase secrets set STRIPE_SECRET_KEY=sk_live_...
-supabase secrets set STRIPE_WEBHOOK_SECRET=whsec_...
-supabase secrets set STRIPE_PRICE_SOLO=price_...
-supabase secrets set STRIPE_PRICE_PRACTICE=price_...
-supabase secrets set STRIPE_PRICE_GROUP=price_...
-supabase secrets set SUPABASE_SERVICE_ROLE_KEY=eyJ...
-supabase secrets set SITE_URL=https://yourdomain.com
-```
-
----
-
-## Project Structure
-
-```
-aiMED-v3/
-├── src/
-│   ├── components/              Shared React UI components
-│   │   ├── Button.tsx
-│   │   ├── StreamOutput.tsx
-│   │   ├── ModelStatus.tsx
-│   │   └── LicenseGate.tsx     Auth gate — wraps app
-│   ├── hooks/
-│   │   ├── useLLM.ts            Linus AI streaming
-│   │   ├── useLicense.ts        Supabase license check
-│   │   └── useEMRData.ts        EMR capture via service worker
-│   ├── utils/
-│   │   ├── supabase.ts          Supabase client (chrome.storage adapter)
-│   │   ├── license.ts           License gate + WASM bridge
-│   │   ├── hardware-detect.ts   LAN Linus AI scanner
-│   │   ├── prompts.ts           Clinical AI prompt library
-│   │   ├── medical-models.ts    Model catalog
-│   │   ├── emr-versions.ts      EMR detection
-│   │   └── insurance-portals.ts Payer DB
-│   ├── sidepanel/               Main panel (8 workflow tabs)
-│   ├── options/                 Settings (Account, LLM, EMR, About)
-│   └── popup/                   Quick-launch toolbar popup
-├── public/
-│   ├── manifest.json            MV3 (Edge/Chrome/Brave/Opera)
-│   ├── manifest-firefox.json    MV2 (Firefox)
-│   ├── background/              Service workers
-│   ├── content/                 EMR + insurance content scripts
-│   └── icons/
-├── wasm/                        Rust WASM module
-│   ├── Cargo.toml
-│   └── src/lib.rs               Fingerprinting + JWT validation
-├── supabase/
-│   ├── migrations/001_initial.sql
-│   └── functions/
-│       ├── stripe-checkout/     Creates Stripe session
-│       └── stripe-webhook/      Handles payment → creates license
-├── scripts/
-│   ├── build.sh                 Full build (WASM + Vite + packages)
-│   └── build-browsers.sh        Browser packaging
-├── package.json
-├── vite.config.ts
-├── tailwind.config.ts
-└── ADMIN.md
-```
-
----
-
-## Privacy & HIPAA
-
-- ✅ All AI processing runs locally via Linus AI — no PHI sent to cloud AI
-- ✅ No internet required for AI workflows after model download
-- ✅ Session history is ephemeral — cleared on browser restart
-- ✅ License validation only sends a hashed device fingerprint
-- ✅ Supabase handles auth via standard OAuth2 tokens (no custom key management)
-- ✅ Compatible with local-processing HIPAA workflows
-
-**Disclaimer:** aiMED provides clinical decision support only. All AI outputs must be reviewed by a licensed clinician before clinical or billing use.
+| Action | Where |
+|---|---|
+| Sign in with license key | Settings → Account & License |
+| See which devices are using your license | Settings → Account → Active Devices |
+| Remove an old device to free a seat | Settings → Account → Remove Device |
+| Check trial status | Settings → Account |
 
 ---
 
@@ -261,50 +151,31 @@ aiMED-v3/
 
 | Problem | Solution |
 |---|---|
-| "LLM Offline" status | Run `linus serve` and check `http://localhost:9480` |
-| Sign in fails | Verify Supabase URL and anon key in `.env` |
-| No active license | Purchase at your website; check Supabase `licenses` table |
+| "LLM Offline" shown | Start LINUS-AI and check `http://localhost:9480` loads |
+| Key not accepted | Check your key starts with `LNAM-` and matches the format exactly |
 | Machine limit reached | Remove an old device in Settings → Account |
-| WASM not loading | Run `npm run wasm:build` first |
-| LAN scan finds nothing | Ensure `LINUS_HOST=0.0.0.0:9480` on the remote machine |
-| Vite build errors | Run `npm install` to restore dependencies |
+| Extension not reading the page | Refresh the page, then re-open the extension panel |
+| LAN server not found by Scan | Make sure LINUS-AI is running with `--host 0.0.0.0` on the remote machine |
 
 ---
 
-## Version History
+## Version history
 
-### v4.0.0 — 2026-02-28
-- **Stack**: React 18 + Tailwind CSS replacing vanilla HTML/CSS/JS
-- **Auth**: Supabase account-based auth replacing RSA key entry
-- **Backend**: Supabase Edge Functions + PostgreSQL replacing Node.js + SQLite
-- **Protection**: Rust WASM module for fingerprinting + JWT validation
-- **Build**: Vite 5 multi-entry bundler with TypeScript
-- **Payments**: Stripe Checkout via Supabase Edge Functions
+### v4.0.0
+- Replaced Supabase account-based auth with offline `LNAM-*` license keys (consistent with all other LINUS-AI products)
+- Added LINUS-AI Professional bundle — aiMED license holders now receive LINUS-AI Pro free
+- React 18 + Vite 5 frontend with Tailwind CSS dark medical theme
+- Rust WASM module for device fingerprinting and license validation
+- 14-day offline trial with countdown banner
 
-### v2.0.0 — 2026-02-27
-- One-time purchase licensing with RSA-JWT copy protection
-- Node.js + Stripe + SQLite license server
-- LAN hardware scanner, SuggestCare, Insurance workflows
-- Cross-browser build (Firefox MV2 support)
+### v3.0.0 — 2026-02-28
+- Initial public release with Supabase account-based auth
+- 8 clinical workflow tabs
+- Stripe subscription billing
 
-### v1.0.0 — Initial Release
-- 5 core clinical workflows, Epic/eCW/PCC EMR support
-- Local Linus AI streaming, dark medical UI
+---
 
+## License
 
-## Cross-Platform Build System
-
-This module uses the standardized Linus AI `build.sh` pipeline for seamless compilation across environments.
-
-```bash
-# Build for your specific target architecture
-./build.sh macos-arm64
-./build.sh windows-x86_64
-./build.sh linux-x86_64
-./build.sh web
-```
-
-**Features:**
-- Automatically maps `macos-arm64` to `aarch64-apple-darwin` for Rust targets.
-- Falls back to `npm ci` or `npm install` if `node_modules` is missing.
-- Utilizes local `npx tauri build` to prevent global CLI version mismatches.
+Proprietary — © 2026 LINUS-AI. All rights reserved.  
+See [linus-ai.com](https://linus-ai.com) for licensing.

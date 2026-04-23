@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "../linus-ai"
+		},
+		{
+			"path": "../linus-ai-private"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../linus-ai-reserve"
+		},
+		{
+			"path": "../linus-ai-trips"
+		},
+		{
+			"path": "../linus-ai-website"
+		},
+		{
+			"path": "../linus-aiMED"
+		},
+		{
+			"path": "../linus-bizcore"
+		},
+		{
+			"path": "../linus-day"
+		},
+		{
+			"path": "../linus-bizcore-ext"
+		},
+		{
+			"path": "../linus-aiMED-ext"
+		},
+		{
+			"path": "../p2pnet"
+		}
+	]
+}
