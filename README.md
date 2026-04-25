@@ -9,20 +9,20 @@
 
 ## Products
 
-| Product | Description | Platform | Price from |
+| Product | Latest | Platform | Price from |
 |---|---|---|---|
-| **[LINUS-AI](#linus-ai-v402)** | Private distributed AI inference engine | macOS · Linux · Windows | Free |
-| **[LINUS BizCore](#linus-bizcore-v400)** | Local-first business OS | macOS · Linux | $199 |
-| **[BizCore Extension](#linus-bizcore-extension-v400)** | Browser AI for business apps | Chrome · Edge · Firefox · Brave | Free w/ BizCore |
-| **[aiMED Medical](#linus-ai-medical-server-v402)** | HIPAA-compliant clinical AI server | macOS · Linux | $1,499 |
-| **[aiMED Extension](#aimed-extension-v402)** | Clinical AI for healthcare practices | Chrome · Edge · Firefox · Brave | $10/90d |
-| **[LINUS ConnectX](#linus-connectx)** | Private P2P career network | macOS · Linux · Windows | $149 |
-| **[LINUS Pulse](#linus-pulse)** | Personal AI suite | macOS · Linux · Windows | $49 |
-| **[LINUS Forge](#linus-forge)** | P2P product studio | macOS · Linux · Windows | $199 |
-| **[LINUS Trips](#linus-trips)** | AI travel workspace | macOS · Linux · Windows | $99 |
-| **[LINUS Reserve](#linus-reserve)** | AI hospitality management | macOS · Linux · Windows | $199 |
-| **[LINUS Day](#linus-day)** | AI daily planner | macOS · Linux · Windows | $99 |
-| **[P2P Network](#p2p-network)** | Private mesh infrastructure | macOS · Linux · Windows | $299 |
+| **[LINUS-AI](#linus-ai-v402)** | v4.0.2 | macOS · Linux · Windows | Free |
+| **[LINUS BizCore](#linus-bizcore-v400)** | v4.0.0 | macOS · Linux | $199 |
+| **[BizCore Extension](#linus-bizcore-extension-v400)** | v4.0.0 | Chrome · Edge · Firefox · Brave | Free w/ BizCore |
+| **[aiMED Medical](#linus-ai-medical-server-v402)** | v4.0.2 | macOS · Linux | $1,499 |
+| **[aiMED Extension](#aimed-extension-v402)** | v4.0.2 | Chrome · Edge · Firefox · Brave | $10/90d |
+| **[LINUS ConnectX](#linus-connectx-v011)** | v0.1.1 | macOS · Linux · Windows | $149 |
+| **[LINUS Pulse](#linus-pulse-v011)** | v0.1.1 | macOS · Linux · Windows | $49 |
+| **[LINUS Forge](#linus-forge-v011)** | v0.1.1 | macOS · Linux · Windows | $199 |
+| **[LINUS Trips](#linus-trips-v012)** | v0.1.2 | Linux · Windows | $99 |
+| **[LINUS Reserve](#linus-reserve-v201)** | v2.0.1 | macOS · Linux · Windows | $199 |
+| **[LINUS Day](#linus-day-v223)** | v2.2.3 | macOS · Linux · Windows | $99 |
+| **[P2P Network](#p2p-network-v012)** | v0.1.2 | macOS · Linux · Windows | $299 |
 
 **Purchase flow (all products):**  
 **→ [linus-ai.com/store](https://linus-ai.com/store/index.html)** — PayPal checkout on the website creates your order and delivers your license key by email automatically, within minutes of payment. No manual steps required.
@@ -52,20 +52,20 @@ Private AI that runs entirely on your hardware — no cloud, no telemetry, no Py
 | **Enterprise** (unlimited seats) | $7,999/yr | Unlimited | Unlimited |
 | **Enterprise Plus** (unlimited seats) | $14,999/yr | Unlimited | Unlimited |
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#linus-ai)** — instant license delivery via PayPal checkout
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#linus-ai)**
 
 ### Download
 
 | Platform | File |
 |---|---|
-| Linux x86_64 | [`linus-ai-v4.0.2-headless-linux-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-linux-x86_64) |
-| Linux arm64 (Raspberry Pi / server) | [`linus-ai-v4.0.2-headless-linux-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-linux-arm64) |
-| macOS arm64 (Apple Silicon) | [`linus-ai-v4.0.2-headless-macos-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-macos-arm64) |
-| macOS x86_64 (Intel) | [`linus-ai-v4.0.2-headless-macos-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-macos-x86_64) |
-| Windows x86_64 | [`linus-ai-v4.0.2-headless-windows-x86_64.exe`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-windows-x86_64.exe) |
-| macOS DMG (GUI) | [`linus-ai-v4.0.2-macos.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-macos.dmg) |
-| Windows MSIX (GUI) | [`linus-ai-v4.0.2-windows-x86_64.msix`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-windows-x86_64.msix) |
+| macOS arm64 — Apple Silicon (headless) | [`linus-ai-v4.0.2-headless-macos-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-macos-arm64) |
+| macOS x86_64 — Intel (headless) | [`linus-ai-v4.0.2-headless-macos-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-macos-x86_64) |
+| macOS GUI (DMG) | [`linus-ai-v4.0.2-macos.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-macos.dmg) |
+| Linux x86_64 (headless) | [`linus-ai-v4.0.2-headless-linux-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-linux-x86_64) |
+| Linux arm64 (headless) | [`linus-ai-v4.0.2-headless-linux-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-linux-arm64) |
 | Linux .deb (GUI) | [`linus-ai-v4.0.2-linux-x86_64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-linux-x86_64.deb) |
+| Windows x86_64 (headless) | [`linus-ai-v4.0.2-headless-windows-x86_64.exe`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-windows-x86_64.exe) |
+| Windows MSIX (GUI) | [`linus-ai-v4.0.2-windows-x86_64.msix`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-windows-x86_64.msix) |
 | Checksums | [`SHA256SUMS.txt`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/SHA256SUMS.txt) |
 
 ### Install
@@ -86,11 +86,7 @@ chmod +x linus-ai-v4.0.2-headless-linux-x86_64
 
 **Windows** — Download and run the `.exe`. Click "More info → Run anyway" if SmartScreen appears.
 
-### First launch
-
-Control panel opens at **http://127.0.0.1:9480/app**  
-Go to **Models → Browse → Download** to get your first model.  
-Community tier is free and starts immediately — no key needed.
+Control panel opens at **http://127.0.0.1:9480/app** — go to **Models → Browse → Download** to get your first model. Community tier starts immediately, no key needed.
 
 ### Activate a paid license
 
@@ -102,17 +98,10 @@ linus-ai --activate LNAI-XXXX-XXXX-XXXX-XXXX
 
 ## LINUS BizCore v4.0.0
 
-Local-first business OS for small businesses — one app for everything, no SaaS fees.
+Local-first business OS — one app for everything, no SaaS fees.
 
-- **Dashboard** — activity feed, KPIs, cash flow snapshot
-- **Invoicing** — create, send, and track invoices and payments
-- **Contacts / CRM** — customers, vendors, interaction history
-- **Tasks** — project tasks, deadlines, assignments
-- **Calendar** — scheduling, reminders, team events
-- **Documents** — file storage, templates, e-sign
-- **HR & Payroll** — employees, time tracking, payslips
-- **Accounting** — chart of accounts, P&L, balance sheet
-- **AI Assistant** — chat with your business data (connects to LINUS-AI on port 9480)
+- Dashboard, Invoicing, Contacts/CRM, Tasks, Calendar, Documents, HR & Payroll, Accounting
+- AI Assistant — chat with your business data (connects to LINUS-AI on port 9480)
 - BizCore Extension included free with every license
 
 ### Pricing
@@ -126,14 +115,14 @@ Local-first business OS for small businesses — one app for everything, no SaaS
 
 Optional annual updates: $49/yr (Starter) · $79/yr (Business) · $99/yr (Unlimited)
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#bizcore)** — instant license delivery via PayPal checkout
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#bizcore)**
 
 ### Download
 
 | Platform | File |
 |---|---|
-| macOS arm64 (Apple Silicon) | [`bizcore-LINUS-BizCore_4.0.0_aarch64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/bizcore-LINUS-BizCore_4.0.0_aarch64.dmg) |
-| Linux x86_64 (deb) | [`bizcore-LINUS-BizCore_4.0.0_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/bizcore-LINUS-BizCore_4.0.0_amd64.deb) |
+| macOS arm64 — Apple Silicon (DMG) | [`bizcore-LINUS-BizCore_4.0.0_aarch64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/bizcore-LINUS-BizCore_4.0.0_aarch64.dmg) |
+| Linux x86_64 (.deb) | [`bizcore-LINUS-BizCore_4.0.0_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/bizcore-LINUS-BizCore_4.0.0_amd64.deb) |
 | Linux x86_64 (AppImage) | [`bizcore-LINUS-BizCore_4.0.0_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-v4.0.0/bizcore-LINUS-BizCore_4.0.0_amd64.AppImage) |
 
 ### Install
@@ -141,8 +130,8 @@ Optional annual updates: $49/yr (Starter) · $79/yr (Business) · $99/yr (Unlimi
 **macOS**
 ```bash
 xattr -d com.apple.quarantine bizcore-LINUS-BizCore_4.0.0_aarch64.dmg
+# double-click the DMG → drag to Applications → right-click → Open on first launch
 ```
-Then double-click the DMG, drag BizCore to Applications, right-click → Open on first launch.
 
 **Linux (deb)**
 ```bash
@@ -152,24 +141,14 @@ sudo dpkg -i bizcore-LINUS-BizCore_4.0.0_amd64.deb
 
 **Linux (AppImage)**
 ```bash
-chmod +x bizcore-LINUS-BizCore_4.0.0_amd64.AppImage
-./bizcore-LINUS-BizCore_4.0.0_amd64.AppImage
+chmod +x bizcore-LINUS-BizCore_4.0.0_amd64.AppImage && ./bizcore-LINUS-BizCore_4.0.0_amd64.AppImage
 ```
 
 ---
 
 ## LINUS BizCore Extension v4.0.0
 
-AI business assistant in your browser — works inside QuickBooks, Xero, Stripe, HubSpot, Salesforce, Gmail, and Outlook.
-
-- **Chat** — general business AI: strategy, analysis, writing
-- **Invoice** — draft invoices, review billing, write follow-up emails
-- **CRM** — customer insights, follow-up drafts, pipeline analysis
-- **Tasks** — prioritize, break down projects, standup updates
-- **Accounting** — expense categorization, P&L review, tax checklist
-- **Page Summary** — summarize any page into action items and key figures
-
-Requires LINUS-AI (port 9480) or BizCore running on your machine or LAN. **Included free with any BizCore license.**
+AI business assistant for Chrome, Edge, Firefox, Brave, Opera. Works inside QuickBooks, Xero, Stripe, HubSpot, Salesforce, Gmail, Outlook. **Included free with any BizCore license.**
 
 ### Pricing
 
@@ -178,7 +157,7 @@ Requires LINUS-AI (port 9480) or BizCore running on your machine or LAN. **Inclu
 | Included with any BizCore license | Free |
 | Extension only | $99 one-time |
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#bizcore)** — instant license delivery via PayPal checkout
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#bizcore)**
 
 ### Download
 
@@ -190,28 +169,19 @@ Requires LINUS-AI (port 9480) or BizCore running on your machine or LAN. **Inclu
 | Opera | [`bizcore-ext-bizcore-opera-v4.0.0.zip`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-ext-bizcore-opera-v4.0.0.zip) |
 | Firefox | [`bizcore-ext-bizcore-firefox-v4.0.0.xpi`](https://github.com/miryala3/linus-ai-public/releases/download/bizcore-ext-v4.0.0/bizcore-ext-bizcore-firefox-v4.0.0.xpi) |
 
-### Install
-
-**Chrome / Edge / Brave / Opera:**
-1. Unzip the `.zip` file
-2. Open `chrome://extensions` (or `edge://extensions`, `brave://extensions`, `opera://extensions`)
-3. Enable **Developer mode** → **Load unpacked** → select the unzipped folder
-
-**Firefox:**
-1. Open `about:addons` → gear icon → **Install Add-on From File**
-2. Select the `.xpi` file
+**Chrome / Edge / Brave / Opera:** Unzip → `chrome://extensions` → Developer mode → Load unpacked  
+**Firefox:** `about:addons` → gear → Install Add-on From File → select `.xpi`
 
 ---
 
 ## LINUS-AI Medical Server v4.0.2
 
-HIPAA-compliant private AI server for hospitals, clinics, and healthcare networks. All inference on-premise — PHI never leaves your infrastructure.
+HIPAA-compliant private AI server. All inference on-premise — PHI never leaves your infrastructure. Every paid license includes 3 keys: aiMED Medical Server · aiMED Extension · LINUS-AI.
 
-- Role-scoped clinical AI — physician, nurse, radiologist, pharmacist, and more
-- PHI detection and audit logging — append-only JSONL, daily rotation
-- Supports Med42, Meditron, BioMistral, ClinicalCamel (GGUF format)
-- Single binary — no Python, no pip, no cloud dependencies
-- Every paid license includes 3 keys: aiMED Medical Server · aiMED Extension · LINUS-AI Inference Engine
+- Role-scoped clinical AI (physician, nurse, radiologist, pharmacist, and more)
+- PHI detection + append-only audit log (JSONL, daily rotation)
+- Supports Med42, Meditron, BioMistral, ClinicalCamel (GGUF)
+- Single binary, no Python, no cloud
 
 ### Pricing
 
@@ -221,54 +191,37 @@ HIPAA-compliant private AI server for hospitals, clinics, and healthcare network
 | **Hospital** | 500 | $9,999 one-time |
 | **Health System** | Unlimited | $99,999 one-time |
 
-Lifetime update add-ons available: +$299 (Clinic) · +$999 (Hospital) · +$9,999 (Health System)
+Lifetime update add-ons: +$299 (Clinic) · +$999 (Hospital) · +$9,999 (Health System)
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#aimed)** — instant license delivery via PayPal checkout
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#aimed)**
 
 ### Download
 
 | Platform | File |
 |---|---|
-| macOS arm64 (Apple Silicon) | [`med-linus-ai-med-4.0.2-aarch64-apple-darwin.tar.gz`](https://github.com/miryala3/linus-ai-public/releases/download/med-v4.0.2/med-linus-ai-med-4.0.2-aarch64-apple-darwin.tar.gz) |
+| macOS arm64 — Apple Silicon | [`med-linus-ai-med-4.0.2-aarch64-apple-darwin.tar.gz`](https://github.com/miryala3/linus-ai-public/releases/download/med-v4.0.2/med-linus-ai-med-4.0.2-aarch64-apple-darwin.tar.gz) |
 | Linux x86_64 | [`med-linus-ai-med-4.0.2-x86_64-unknown-linux-gnu.tar.gz`](https://github.com/miryala3/linus-ai-public/releases/download/med-v4.0.2/med-linus-ai-med-4.0.2-x86_64-unknown-linux-gnu.tar.gz) |
 | Linux arm64 | [`med-linus-ai-med-4.0.2-aarch64-unknown-linux-gnu.tar.gz`](https://github.com/miryala3/linus-ai-public/releases/download/med-v4.0.2/med-linus-ai-med-4.0.2-aarch64-unknown-linux-gnu.tar.gz) |
 
 ### Install
 
-**macOS**
 ```bash
+# macOS
 tar xzf linus-ai-med-4.0.2-aarch64-apple-darwin.tar.gz
-xattr -d com.apple.quarantine linus-ai-med
-codesign --force --deep --sign - linus-ai-med
+xattr -d com.apple.quarantine linus-ai-med && codesign --force --deep --sign - linus-ai-med
 bash quickstart.sh
+
+# Linux
+tar xzf linus-ai-med-4.0.2-x86_64-unknown-linux-gnu.tar.gz && bash quickstart.sh
 ```
 
-**Linux**
-```bash
-tar xzf linus-ai-med-4.0.2-x86_64-unknown-linux-gnu.tar.gz
-bash quickstart.sh
-```
-
-Admin interface: `http://localhost:9500/admin`
-
-> Never expose port 9500 to the internet — use a reverse proxy with TLS for remote access.
+Admin interface: `http://localhost:9500/admin` — never expose port 9500 to the internet without TLS.
 
 ---
 
 ## aiMED Extension v4.0.2
 
-Clinical AI assistant for healthcare practices — 8 workflow tabs running against your local aiMED Medical server. PHI never leaves your network.
-
-- **Chart Summary** — live EMR → clinical brief with HEDIS gaps and HCC flags
-- **Pre-Charter** — PDF/text → 1-page visit brief with trajectory assessment
-- **Inbox Zero** — portal message → triage and draft reply (URGENT / SAME-DAY / ROUTINE)
-- **Billing Optimizer** — SOAP note → ICD-10 + CPT + HCC with full MDM scoring
-- **Patient Educator** — diagnosis → patient handout in 20 languages
-- **Quick Tools** — drug interaction, differential diagnosis, prior auth, referral letters
-- **Insurance Verify** — payer portal capture and analysis (30+ payers)
-- **SuggestCare** — evidence-based care gaps with ASCVD, CHA₂DS₂-VASc, CKD-EPI risk scores
-
-Requires aiMED Medical Server as backend (port 9500). Uses a separate `LNAM-*` license key.
+Clinical AI for healthcare practices — 8 workflow tabs (Chart Summary, Pre-Charter, Inbox Zero, Billing Optimizer, Patient Educator, Quick Tools, Insurance Verify, SuggestCare). Requires aiMED Medical Server (port 9500). Uses a `LNAM-*` license key.
 
 ### Pricing
 
@@ -281,7 +234,7 @@ Requires aiMED Medical Server as backend (port 9500). Uses a separate `LNAM-*` l
 | **Group Practice** | Unlimited | $1,999/yr |
 | **Health System** | Unlimited | $9,999/yr |
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#aimed-ext)** — instant license delivery via PayPal checkout
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#aimed-ext)**
 
 ### Download
 
@@ -293,27 +246,15 @@ Requires aiMED Medical Server as backend (port 9500). Uses a separate `LNAM-*` l
 | Opera | [`aimed-ext-aiMED-opera-v4.0.2.zip`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aimed-ext-aiMED-opera-v4.0.2.zip) |
 | Firefox | [`aimed-ext-aiMED-firefox-v4.0.2.xpi`](https://github.com/miryala3/linus-ai-public/releases/download/aimed-ext-v4.0.2/aimed-ext-aiMED-firefox-v4.0.2.xpi) |
 
-### Install
-
-**Chrome / Edge / Brave / Opera:**
-1. Unzip the `.zip` file
-2. Open `chrome://extensions` → Enable **Developer mode** → **Load unpacked** → select folder
-
-**Firefox:**
-1. Open `about:addons` → gear icon → **Install Add-on From File** → select `.xpi`
-
-After install: open extension → enter your `LNAM-*` license key in **Settings → Account**.
+**Chrome / Edge / Brave / Opera:** Unzip → `chrome://extensions` → Developer mode → Load unpacked  
+**Firefox:** `about:addons` → gear → Install Add-on From File → `.xpi`  
+After install: extension → Settings → Account → enter `LNAM-*` key.
 
 ---
 
-## LINUS ConnectX
+## LINUS ConnectX v0.1.1
 
-Private P2P career network — no LinkedIn data mining, no algorithmic suppression, no central servers.
-
-- Encrypted peer-to-peer connections between professionals
-- Direct messaging, project boards, portfolio hosting
-- Runs on your hardware, your data stays yours
-- No ads, no feed algorithms, unlimited connections
+Private P2P career network. No LinkedIn data mining, no algorithmic suppression, no central servers. Encrypted peer-to-peer connections, direct messaging, project boards, portfolio hosting.
 
 ### Pricing
 
@@ -323,20 +264,25 @@ Private P2P career network — no LinkedIn data mining, no algorithmic suppressi
 | **ConnectX Pro** | $149 one-time |
 | **Enterprise** | $499/yr |
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#connectx)** — instant license delivery via PayPal checkout  
-**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#connectx)**
+
+### Download
+
+| Platform | File |
+|---|---|
+| macOS arm64 — Apple Silicon (DMG) | [`connectx-LINUS.ConnectX_0.1.1_aarch64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/connectx-v0.1.1/connectx-LINUS.ConnectX_0.1.1_aarch64.dmg) |
+| macOS x64 — Intel (DMG) | [`connectx-LINUS.ConnectX_0.1.1_x64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/connectx-v0.1.1/connectx-LINUS.ConnectX_0.1.1_x64.dmg) |
+| Linux x86_64 (.deb) | [`connectx-LINUS.ConnectX_0.1.1_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/connectx-v0.1.1/connectx-LINUS.ConnectX_0.1.1_amd64.deb) |
+| Linux x86_64 (AppImage) | [`connectx-LINUS.ConnectX_0.1.1_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/connectx-v0.1.1/connectx-LINUS.ConnectX_0.1.1_amd64.AppImage) |
+| Windows x64 (Setup) | [`connectx-LINUS.ConnectX_0.1.1_x64-setup.exe`](https://github.com/miryala3/linus-ai-public/releases/download/connectx-v0.1.1/connectx-LINUS.ConnectX_0.1.1_x64-setup.exe) |
+| Windows x64 (MSI) | [`connectx-LINUS.ConnectX_0.1.1_x64_en-US.msi`](https://github.com/miryala3/linus-ai-public/releases/download/connectx-v0.1.1/connectx-LINUS.ConnectX_0.1.1_x64_en-US.msi) |
+| Checksums | [`SHA256SUMS-connectx.txt`](https://github.com/miryala3/linus-ai-public/releases/download/connectx-v0.1.1/SHA256SUMS-connectx.txt) |
 
 ---
 
-## LINUS Pulse
+## LINUS Pulse v0.1.1
 
-Personal AI suite — journal, goals, finances, AI summariser. All offline on your own hardware.
-
-- Journal with AI reflection prompts
-- Daily planner and habit tracker
-- Local finance tracker and expense insights
-- AI summariser and clipboard manager
-- 1-device Solo or 5-device Family license
+Personal AI suite — journal, goals, finances, AI summariser. All offline on your own hardware. 1-device Solo or 5-device Family license.
 
 ### Pricing
 
@@ -346,19 +292,25 @@ Personal AI suite — journal, goals, finances, AI summariser. All offline on yo
 | **Solo** (1 device) | $49 one-time |
 | **Family** (5 devices) | $99 one-time |
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#pulse)** — instant license delivery via PayPal checkout  
-**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#pulse)**
+
+### Download
+
+| Platform | File |
+|---|---|
+| macOS arm64 — Apple Silicon (DMG) | [`pulse-LINUS.Pulse_0.1.1_aarch64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/pulse-v0.1.1/pulse-LINUS.Pulse_0.1.1_aarch64.dmg) |
+| macOS x64 — Intel (DMG) | [`pulse-LINUS.Pulse_0.1.1_x64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/pulse-v0.1.1/pulse-LINUS.Pulse_0.1.1_x64.dmg) |
+| Linux x86_64 (.deb) | [`pulse-LINUS.Pulse_0.1.1_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/pulse-v0.1.1/pulse-LINUS.Pulse_0.1.1_amd64.deb) |
+| Linux x86_64 (AppImage) | [`pulse-LINUS.Pulse_0.1.1_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/pulse-v0.1.1/pulse-LINUS.Pulse_0.1.1_amd64.AppImage) |
+| Windows x64 (Setup) | [`pulse-LINUS.Pulse_0.1.1_x64-setup.exe`](https://github.com/miryala3/linus-ai-public/releases/download/pulse-v0.1.1/pulse-LINUS.Pulse_0.1.1_x64-setup.exe) |
+| Windows x64 (MSI) | [`pulse-LINUS.Pulse_0.1.1_x64_en-US.msi`](https://github.com/miryala3/linus-ai-public/releases/download/pulse-v0.1.1/pulse-LINUS.Pulse_0.1.1_x64_en-US.msi) |
+| Checksums | [`SHA256SUMS-pulse.txt`](https://github.com/miryala3/linus-ai-public/releases/download/pulse-v0.1.1/SHA256SUMS-pulse.txt) |
 
 ---
 
-## LINUS Forge
+## LINUS Forge v0.1.1
 
-P2P product studio — build and distribute decentralised apps on the LINUS-AI mesh. No app store gatekeepers.
-
-- Full SDK with visual app builder
-- Peer-to-peer distribution (no centralised hosting)
-- Offline-first storage
-- Built-in LINUS-AI integration hooks
+P2P product studio — build and distribute decentralised apps on the LINUS-AI mesh. SDK, visual builder, peer distribution, offline-first storage, LINUS-AI integration hooks.
 
 ### Pricing
 
@@ -368,19 +320,25 @@ P2P product studio — build and distribute decentralised apps on the LINUS-AI m
 | **Forge Studio** | $199 one-time |
 | **Enterprise** | $799/yr |
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#forge)** — instant license delivery via PayPal checkout  
-**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#forge)**
+
+### Download
+
+| Platform | File |
+|---|---|
+| macOS arm64 — Apple Silicon (DMG) | [`forge-LINUS.Forge_0.1.1_aarch64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/forge-v0.1.1/forge-LINUS.Forge_0.1.1_aarch64.dmg) |
+| macOS x64 — Intel (DMG) | [`forge-LINUS.Forge_0.1.1_x64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/forge-v0.1.1/forge-LINUS.Forge_0.1.1_x64.dmg) |
+| Linux x86_64 (.deb) | [`forge-LINUS.Forge_0.1.1_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/forge-v0.1.1/forge-LINUS.Forge_0.1.1_amd64.deb) |
+| Linux x86_64 (AppImage) | [`forge-LINUS.Forge_0.1.1_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/forge-v0.1.1/forge-LINUS.Forge_0.1.1_amd64.AppImage) |
+| Windows x64 (Setup) | [`forge-LINUS.Forge_0.1.1_x64-setup.exe`](https://github.com/miryala3/linus-ai-public/releases/download/forge-v0.1.1/forge-LINUS.Forge_0.1.1_x64-setup.exe) |
+| Windows x64 (MSI) | [`forge-LINUS.Forge_0.1.1_x64_en-US.msi`](https://github.com/miryala3/linus-ai-public/releases/download/forge-v0.1.1/forge-LINUS.Forge_0.1.1_x64_en-US.msi) |
+| Checksums | [`SHA256SUMS-forge.txt`](https://github.com/miryala3/linus-ai-public/releases/download/forge-v0.1.1/SHA256SUMS-forge.txt) |
 
 ---
 
-## LINUS Trips
+## LINUS Trips v0.1.2
 
-AI travel workspace — plan, source, and manage travel with local AI. Offline-first, no cloud required.
-
-- Itinerary builder with AI suggestions
-- Hotel and flight search
-- Expense tracking and trip calendar
-- Buy once, own forever
+AI travel workspace — itinerary builder, hotel & flight search, expense tracking. Offline-first, no cloud required. Buy once, own forever.
 
 ### Pricing
 
@@ -390,20 +348,23 @@ AI travel workspace — plan, source, and manage travel with local AI. Offline-f
 | **Trips Pro** | $99 one-time |
 | **Enterprise** | $499/yr |
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#trips)** — instant license delivery via PayPal checkout  
-**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#trips)**
+
+### Download
+
+| Platform | File |
+|---|---|
+| Linux x86_64 (.deb) | [`trips-LINUS-AI.Trips_0.1.2_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/trips-v0.1.2/trips-LINUS-AI.Trips_0.1.2_amd64.deb) |
+| Linux x86_64 (AppImage) | [`trips-LINUS-AI.Trips_0.1.2_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/trips-v0.1.2/trips-LINUS-AI.Trips_0.1.2_amd64.AppImage) |
+| Windows x64 (Setup) | [`trips-LINUS-AI.Trips_0.1.2_x64-setup.exe`](https://github.com/miryala3/linus-ai-public/releases/download/trips-v0.1.2/trips-LINUS-AI.Trips_0.1.2_x64-setup.exe) |
+| Windows x64 (MSI) | [`trips-LINUS-AI.Trips_0.1.2_x64_en-US.msi`](https://github.com/miryala3/linus-ai-public/releases/download/trips-v0.1.2/trips-LINUS-AI.Trips_0.1.2_x64_en-US.msi) |
+| Checksums | [`SHA256SUMS-trips.txt`](https://github.com/miryala3/linus-ai-public/releases/download/trips-v0.1.2/SHA256SUMS-trips.txt) |
 
 ---
 
-## LINUS Reserve
+## LINUS Reserve v2.0.1
 
-AI hospitality management — reservations, yield optimiser, no-show prediction, POS integration. No per-cover fees.
-
-- Reservation management with yield optimisation
-- AI-powered no-show prediction
-- POS integration and chat monitor
-- AI booking agent for guest interactions
-- No per-cover or per-booking fees — flat license
+AI hospitality management — reservations, yield optimiser, no-show prediction, POS integration, AI booking agent. No per-cover fees. Flat license.
 
 ### Pricing
 
@@ -413,42 +374,52 @@ AI hospitality management — reservations, yield optimiser, no-show prediction,
 | **Reserve Pro** (single venue) | $199 one-time |
 | **Enterprise** (multi-property) | $799/yr |
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#reserve)** — instant license delivery via PayPal checkout  
-**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#reserve)**
+
+### Download
+
+| Platform | File |
+|---|---|
+| macOS (universal DMG) | [`reserve-Linus.Reservations_2.0.0_universal.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/reserve-v2.0.1/reserve-Linus.Reservations_2.0.0_universal.dmg) |
+| Linux x86_64 (.deb) | [`reserve-Linus.Reservations_2.0.0_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/reserve-v2.0.1/reserve-Linus.Reservations_2.0.0_amd64.deb) |
+| Linux arm64 (.deb) | [`reserve-Linus.Reservations_2.0.0_arm64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/reserve-v2.0.1/reserve-Linus.Reservations_2.0.0_arm64.deb) |
+| Linux x86_64 (AppImage) | [`reserve-Linus.Reservations_2.0.0_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/reserve-v2.0.1/reserve-Linus.Reservations_2.0.0_amd64.AppImage) |
+| Windows x64 (Setup) | [`reserve-Linus.Reservations_2.0.0_x64-setup.exe`](https://github.com/miryala3/linus-ai-public/releases/download/reserve-v2.0.1/reserve-Linus.Reservations_2.0.0_x64-setup.exe) |
+| Windows x64 (MSI) | [`reserve-Linus.Reservations_2.0.0_x64_en-US.msi`](https://github.com/miryala3/linus-ai-public/releases/download/reserve-v2.0.1/reserve-Linus.Reservations_2.0.0_x64_en-US.msi) |
+| Checksums | [`SHA256SUMS-reserve.txt`](https://github.com/miryala3/linus-ai-public/releases/download/reserve-v2.0.1/SHA256SUMS-reserve.txt) |
 
 ---
 
-## LINUS Day
+## LINUS Day v2.2.3
 
-AI daily planner — learns your rhythms, helps you plan, focus, and reflect. Offline. Private.
-
-- Task management with AI scheduling
-- Daily briefing and focus coach
-- Habit tracker and end-of-day reflection
-- Buy once, own forever
+AI daily planner — learns your rhythms, helps you plan, focus, and reflect. Task management, AI scheduling, daily briefing, focus coach, habit tracker, end-of-day reflection. Offline. Private.
 
 ### Pricing
 
 | Tier | Price |
 |---|---|
 | **90-Day Access** | $17 one-time or $17/90d |
-| **Day Perpetual** | $99 one-time |
+| **Day Perpetual** | $99 one-time (+$49/yr updates optional) |
 
-Optional annual updates: +$49/yr
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#day)**
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#day)** — instant license delivery via PayPal checkout  
-**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+### Download
+
+| Platform | File |
+|---|---|
+| macOS arm64 — Apple Silicon (DMG) | [`linus-day-LINUS-Day_2.2.3_aarch64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/linus-day-v2.2.3/linus-day-LINUS-Day_2.2.3_aarch64.dmg) |
+| macOS x64 — Intel (DMG) | [`linus-day-LINUS-Day_2.2.3_x64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/linus-day-v2.2.3/linus-day-LINUS-Day_2.2.3_x64.dmg) |
+| Linux x86_64 (.deb) | [`linus-day-LINUS-Day_2.2.3_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/linus-day-v2.2.3/linus-day-LINUS-Day_2.2.3_amd64.deb) |
+| Linux x86_64 (AppImage) | [`linus-day-LINUS-Day_2.2.3_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/linus-day-v2.2.3/linus-day-LINUS-Day_2.2.3_amd64.AppImage) |
+| Windows x64 (Setup) | [`linus-day-LINUS-Day_2.2.3_x64-setup.exe`](https://github.com/miryala3/linus-ai-public/releases/download/linus-day-v2.2.3/linus-day-LINUS-Day_2.2.3_x64-setup.exe) |
+| Windows x64 (MSI) | [`linus-day-LINUS-Day_2.2.3_x64_en-US.msi`](https://github.com/miryala3/linus-ai-public/releases/download/linus-day-v2.2.3/linus-day-LINUS-Day_2.2.3_x64_en-US.msi) |
+| Checksums | [`SHA256SUMS-linus-day.txt`](https://github.com/miryala3/linus-ai-public/releases/download/linus-day-v2.2.3/SHA256SUMS-linus-day.txt) |
 
 ---
 
-## P2P Network
+## P2P Network v0.1.2
 
-Private mesh infrastructure — encrypted peer-to-peer routing for teams. No central servers, no cloud relay.
-
-- Up to 10 nodes (Pro) or unlimited (Enterprise)
-- mDNS auto-discovery, private DNS, NAT traversal
-- Encrypted mesh routing between nodes
-- Self-hosted, no external dependencies
+Private mesh infrastructure — encrypted peer-to-peer routing for teams. No central servers, no cloud relay. mDNS auto-discovery, private DNS, NAT traversal.
 
 ### Pricing
 
@@ -457,8 +428,19 @@ Private mesh infrastructure — encrypted peer-to-peer routing for teams. No cen
 | **Pro** (10 nodes) | $299 one-time |
 | **Enterprise** (unlimited nodes) | $999/yr |
 
-**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#p2pnet)** — instant license delivery via PayPal checkout  
-**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#p2pnet)**
+
+### Download
+
+| Platform | File |
+|---|---|
+| macOS arm64 — Apple Silicon (DMG) | [`p2pnet-P2PNet_0.1.2_aarch64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/p2pnet-v0.1.2/p2pnet-P2PNet_0.1.2_aarch64.dmg) |
+| macOS x64 — Intel (DMG) | [`p2pnet-P2PNet_0.1.2_x64.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/p2pnet-v0.1.2/p2pnet-P2PNet_0.1.2_x64.dmg) |
+| Linux x86_64 (.deb) | [`p2pnet-P2PNet_0.1.2_amd64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/p2pnet-v0.1.2/p2pnet-P2PNet_0.1.2_amd64.deb) |
+| Linux x86_64 (AppImage) | [`p2pnet-P2PNet_0.1.2_amd64.AppImage`](https://github.com/miryala3/linus-ai-public/releases/download/p2pnet-v0.1.2/p2pnet-P2PNet_0.1.2_amd64.AppImage) |
+| Windows x64 (Setup) | [`p2pnet-P2PNet_0.1.2_x64-setup.exe`](https://github.com/miryala3/linus-ai-public/releases/download/p2pnet-v0.1.2/p2pnet-P2PNet_0.1.2_x64-setup.exe) |
+| Windows x64 (MSI) | [`p2pnet-P2PNet_0.1.2_x64_en-US.msi`](https://github.com/miryala3/linus-ai-public/releases/download/p2pnet-v0.1.2/p2pnet-P2PNet_0.1.2_x64_en-US.msi) |
+| Checksums | [`SHA256SUMS-p2pnet.txt`](https://github.com/miryala3/linus-ai-public/releases/download/p2pnet-v0.1.2/SHA256SUMS-p2pnet.txt) |
 
 ---
 
@@ -469,32 +451,37 @@ Private mesh infrastructure — encrypted peer-to-peer routing for teams. No cen
 | **aiMED Clinical Bundle** | aiMED Medical (Clinic) + aiMED Extension (Solo 1yr) | $1,439 | Save $359 |
 | **LINUS-AI + BizCore Bundle** | LINUS-AI Pro (perpetual) + BizCore Business (perpetual) | $639 | Save $159 |
 
-**→ [Buy bundles at linus-ai.com/store](https://linus-ai.com/store/index.html#bundles)** — instant license delivery via PayPal checkout
+**→ [Buy bundles at linus-ai.com/store](https://linus-ai.com/store/index.html#bundles)**
 
 ---
 
 ## License Activation
 
-All products use the same activation flow. After purchase you receive a license key by email (format: `PPPP-TTTT-XXXX-XXXX-XXXX`).
+After purchase you receive a license key by email (format: `PPPP-TTTT-XXXX-XXXX-XXXX`).
 
-| Product | Activate |
-|---|---|
-| **LINUS-AI** | `linus-ai --activate LNAI-XXXX-XXXX-XXXX-XXXX` or control panel → Settings → Licence |
-| **BizCore** | App menu → License → Enter Key |
-| **BizCore Extension** | Extension options → License Key |
-| **aiMED Medical** | `POST http://localhost:9500/admin/api/activate` with your `LNMD-*` key |
-| **aiMED Extension** | Extension → Settings → Account → Enter License Key (`LNAM-*`) |
-| **ConnectX / Pulse / Forge** | App → Settings → Activate License (`LNCX-*` / `LNPA-*` / `LNFG-*`) |
-| **Trips / Reserve / Day** | App → Settings → License (`LNTR-*` / `LNRV-*` / `LNDY-*`) |
-| **P2P Network** | App → Settings → License (`LNPN-*`) |
+| Product | Key prefix | How to activate |
+|---|---|---|
+| LINUS-AI | `LNAI-` | `linus-ai --activate LNAI-XXXX-XXXX-XXXX-XXXX` or control panel → Settings → Licence |
+| BizCore | `LNBC-` | App menu → License → Enter Key |
+| BizCore Extension | `LNBC-` | Extension options → License Key |
+| aiMED Medical | `LNMD-` | `POST http://localhost:9500/admin/api/activate` with key |
+| aiMED Extension | `LNAM-` | Extension → Settings → Account → Enter License Key |
+| ConnectX | `LNCX-` | App → Settings → Activate License |
+| Pulse | `LNPA-` | App → Settings → Activate License |
+| Forge | `LNFG-` | App → Settings → Activate License |
+| Trips | `LNTR-` | App → Settings → License |
+| Reserve | `LNRV-` | App → Settings → License |
+| Day | `LNDY-` | App → Settings → License |
+| P2P Network | `LNPN-` | App → Settings → License |
 
 **Lost your key?** → [linus-ai.com/reset](https://linus-ai.com/reset.html) — enter your email to resend all keys instantly.
 
-**Transfer to a new machine?**
+**Transfer to a new machine:**
 ```bash
-linus-ai --deactivate    # on the old machine
-linus-ai --activate LNAI-XXXX-XXXX-XXXX-XXXX    # on the new machine
+linus-ai --deactivate          # on the old machine
+linus-ai --activate LNAI-...   # on the new machine
 ```
+For GUI apps: App → Settings → Deactivate, then activate on the new machine.
 
 ---
 
@@ -502,9 +489,9 @@ linus-ai --activate LNAI-XXXX-XXXX-XXXX-XXXX    # on the new machine
 
 | Contact | Purpose |
 |---|---|
-| [support@linus-ai.com](mailto:support@linus-ai.com) | License delivery, general support (all products) |
+| [support@linus-ai.com](mailto:support@linus-ai.com) | License delivery, general support |
 | [sales@linus-ai.com](mailto:sales@linus-ai.com) | Enterprise, Health System, custom pricing |
-| [linus-ai.com/support](https://linus-ai.com/support.html) | Troubleshooting knowledge base (54 articles) |
+| [linus-ai.com/support](https://linus-ai.com/support.html) | Troubleshooting knowledge base |
 | [linus-ai.com/enterprise](https://linus-ai.com/enterprise.html) | Enterprise inquiry form |
 
-**License delivery** is automatic — your key arrives by email within minutes of PayPal payment confirmation. If you don't receive it within 15 minutes, check spam or email [support@linus-ai.com](mailto:support@linus-ai.com).
+License keys arrive by email within minutes of PayPal payment. If you don't receive yours within 15 minutes, check spam or email [support@linus-ai.com](mailto:support@linus-ai.com).
