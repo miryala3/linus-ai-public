@@ -9,16 +9,23 @@
 
 ## Products
 
-| Product | Description | Platform | Latest | Price from |
-|---|---|---|---|---|
-| **[LINUS-AI](#linus-ai-v402)** | Private distributed AI platform | macOS · Linux · Windows | v4.0.2 | Free |
-| **[LINUS BizCore](#linus-bizcore-v400)** | Local-first business OS | macOS · Linux | v4.0.0 | $199 |
-| **[BizCore Extension](#linus-bizcore-extension-v400)** | Browser AI for business apps | Chrome · Edge · Firefox | v4.0.0 | Free w/ BizCore |
-| **[LINUS-AI Medical](#linus-ai-medical-server-v402)** | HIPAA-compliant AI server | macOS · Linux | v4.0.2 | $1,499 |
-| **[aiMED Extension](#aimed-extension-v402)** | Clinical AI for healthcare practices | Chrome · Edge · Firefox | v4.0.2 | $299/yr |
+| Product | Description | Platform | Price from |
+|---|---|---|---|
+| **[LINUS-AI](#linus-ai-v402)** | Private distributed AI inference engine | macOS · Linux · Windows | Free |
+| **[LINUS BizCore](#linus-bizcore-v400)** | Local-first business OS | macOS · Linux | $199 |
+| **[BizCore Extension](#linus-bizcore-extension-v400)** | Browser AI for business apps | Chrome · Edge · Firefox · Brave | Free w/ BizCore |
+| **[aiMED Medical](#linus-ai-medical-server-v402)** | HIPAA-compliant clinical AI server | macOS · Linux | $1,499 |
+| **[aiMED Extension](#aimed-extension-v402)** | Clinical AI for healthcare practices | Chrome · Edge · Firefox · Brave | $10/90d |
+| **[LINUS ConnectX](#linus-connectx)** | Private P2P career network | macOS · Linux · Windows | $149 |
+| **[LINUS Pulse](#linus-pulse)** | Personal AI suite | macOS · Linux · Windows | $49 |
+| **[LINUS Forge](#linus-forge)** | P2P product studio | macOS · Linux · Windows | $199 |
+| **[LINUS Trips](#linus-trips)** | AI travel workspace | macOS · Linux · Windows | $99 |
+| **[LINUS Reserve](#linus-reserve)** | AI hospitality management | macOS · Linux · Windows | $199 |
+| **[LINUS Day](#linus-day)** | AI daily planner | macOS · Linux · Windows | $99 |
+| **[P2P Network](#p2p-network)** | Private mesh infrastructure | macOS · Linux · Windows | $299 |
 
 **Purchase flow (all products):**  
-Pay via PayPal → email **support@linus-ai.com** with your order confirmation → receive license key within 1 business day → enter key in product.
+**→ [linus-ai.com/store](https://linus-ai.com/store/index.html)** — PayPal checkout on the website creates your order and delivers your license key by email automatically, within minutes of payment. No manual steps required.
 
 ---
 
@@ -33,26 +40,19 @@ Private AI that runs entirely on your hardware — no cloud, no telemetry, no Py
 - Agentic workflows — multi-step ReAct loop with MCP tool use
 - HIPAA/compliance engine — PII detection, role profiles, HMAC-chained audit logs
 - Blockchain audit ledger — tamper-evident, Ed25519-signed per-request trail (Team+)
-- 30-day free trial — full Professional features on first launch
 
 ### Pricing
 
 | Tier | Price | Model cap | Profiles |
 |---|---|---|---|
 | **Community** | Free forever | 5B params | 6 |
-| **Trial** | Free (30 days) | 70B params | 14 |
+| **90-Day Access** | $33 one-time or $33/90d | 70B params | 14 |
 | **Professional** | $499 one-time | 70B params | 14 |
 | **Team** (5 seats) | $1,499 one-time | 70B params | 14 |
 | **Enterprise** (unlimited seats) | $7,999/yr | Unlimited | Unlimited |
 | **Enterprise Plus** (unlimited seats) | $14,999/yr | Unlimited | Unlimited |
 
-| Buy | Link |
-|---|---|
-| Support Community — $39 donation | [Pay $39](https://www.paypal.com/ncp/payment/CBRE6DSZFP3HU) |
-| Professional — $499 | [Pay $499](https://www.paypal.com/ncp/payment/NMFSELLNG7X7U) |
-| Team — $1,499 | [Pay $1,499](https://www.paypal.com/ncp/payment/RRHAWGNKDQL5A) |
-| Enterprise — $7,999/yr | [Pay $7,999](https://www.paypal.com/ncp/payment/Z5J9RLR3YT6RA) |
-| Enterprise Plus — $14,999/yr | [Subscribe at linus-ai.com/store](https://linus-ai.com/store) |
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#linus-ai)** — instant license delivery via PayPal checkout
 
 ### Download
 
@@ -63,6 +63,9 @@ Private AI that runs entirely on your hardware — no cloud, no telemetry, no Py
 | macOS arm64 (Apple Silicon) | [`linus-ai-v4.0.2-headless-macos-arm64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-macos-arm64) |
 | macOS x86_64 (Intel) | [`linus-ai-v4.0.2-headless-macos-x86_64`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-macos-x86_64) |
 | Windows x86_64 | [`linus-ai-v4.0.2-headless-windows-x86_64.exe`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-headless-windows-x86_64.exe) |
+| macOS DMG (GUI) | [`linus-ai-v4.0.2-macos.dmg`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-macos.dmg) |
+| Windows MSIX (GUI) | [`linus-ai-v4.0.2-windows-x86_64.msix`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-windows-x86_64.msix) |
+| Linux .deb (GUI) | [`linus-ai-v4.0.2-linux-x86_64.deb`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/linus-ai-v4.0.2-linux-x86_64.deb) |
 | Checksums | [`SHA256SUMS.txt`](https://github.com/miryala3/linus-ai-public/releases/download/v4.0.2/SHA256SUMS.txt) |
 
 ### Install
@@ -89,6 +92,12 @@ Control panel opens at **http://127.0.0.1:9480/app**
 Go to **Models → Browse → Download** to get your first model.  
 Community tier is free and starts immediately — no key needed.
 
+### Activate a paid license
+
+```bash
+linus-ai --activate LNAI-XXXX-XXXX-XXXX-XXXX
+```
+
 ---
 
 ## LINUS BizCore v4.0.0
@@ -104,21 +113,20 @@ Local-first business OS for small businesses — one app for everything, no SaaS
 - **HR & Payroll** — employees, time tracking, payslips
 - **Accounting** — chart of accounts, P&L, balance sheet
 - **AI Assistant** — chat with your business data (connects to LINUS-AI on port 9480)
-- 14-day free trial — full Business-tier features on first launch
+- BizCore Extension included free with every license
 
 ### Pricing
 
-| Tier | Price | Modules | AI Assistant | Users |
-|---|---|---|---|---|
-| **Starter** | $199 one-time | Core 5 modules | Read-only | 1 |
-| **Business** | $299 one-time | All 8 modules | Full | 3 |
-| **Unlimited** | $599 one-time | All 8 modules | Full | Unlimited |
+| Tier | Price | Modules | Users |
+|---|---|---|---|
+| **90-Day Access** | $17 one-time or $17/90d | Starter modules | 1 |
+| **Starter** | $199 one-time | 6 core modules | 1 |
+| **Business** | $299 one-time | All 13 modules | 5 |
+| **Unlimited** | $599 one-time | All 16 modules | Unlimited |
 
-| Buy | Link |
-|---|---|
-| Starter — $199 | [Pay $199](https://www.paypal.com/ncp/payment/RY263RA748ZWY) |
-| Business — $299 | [Pay $299](https://www.paypal.com/ncp/payment/VNFMWHE2UQ9AE) |
-| Unlimited — $599 | [Pay $599](https://www.paypal.com/ncp/payment/57ZWKLYLZ6B3W) |
+Optional annual updates: $49/yr (Starter) · $79/yr (Business) · $99/yr (Unlimited)
+
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#bizcore)** — instant license delivery via PayPal checkout
 
 ### Download
 
@@ -161,14 +169,16 @@ AI business assistant in your browser — works inside QuickBooks, Xero, Stripe,
 - **Accounting** — expense categorization, P&L review, tax checklist
 - **Page Summary** — summarize any page into action items and key figures
 
-Requires LINUS-AI (port 9480) or BizCore running on your machine or LAN. One License included free with any BizCore license.
+Requires LINUS-AI (port 9480) or BizCore running on your machine or LAN. **Included free with any BizCore license.**
 
 ### Pricing
 
-| Option | Price | Link |
-|---|---|---|
-| Included with any BizCore license | Free | See BizCore above |
-| Extension only | $99 one-time | [Pay $99](https://www.paypal.com/ncp/payment/FLRGDB82RZ86E) |
+| Option | Price |
+|---|---|
+| Included with any BizCore license | Free |
+| Extension only | $99 one-time |
+
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#bizcore)** — instant license delivery via PayPal checkout
 
 ### Download
 
@@ -201,7 +211,7 @@ HIPAA-compliant private AI server for hospitals, clinics, and healthcare network
 - PHI detection and audit logging — append-only JSONL, daily rotation
 - Supports Med42, Meditron, BioMistral, ClinicalCamel (GGUF format)
 - Single binary — no Python, no pip, no cloud dependencies
-- 30-day free evaluation — full access before purchase
+- Every paid license includes 3 keys: aiMED Medical Server · aiMED Extension · LINUS-AI Inference Engine
 
 ### Pricing
 
@@ -211,11 +221,9 @@ HIPAA-compliant private AI server for hospitals, clinics, and healthcare network
 | **Hospital** | 500 | $9,999 one-time |
 | **Health System** | Unlimited | $99,999 one-time |
 
-| Buy | Link |
-|---|---|
-| Clinic — $1,499 | [Pay $1,499](https://www.paypal.com/ncp/payment/AK3Q7XPYMMY3S) |
-| Hospital — $9,999 | [Pay $9,999](https://www.paypal.com/ncp/payment/DAJ5PCGUVGHNW) |
-| Health System — $99,999 | [Pay $99,999](https://www.paypal.com/ncp/payment/T6TA8NZTNLZ7S) |
+Lifetime update add-ons available: +$299 (Clinic) · +$999 (Hospital) · +$9,999 (Health System)
+
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#aimed)** — instant license delivery via PayPal checkout
 
 ### Download
 
@@ -249,7 +257,7 @@ Admin interface: `http://localhost:9500/admin`
 
 ## aiMED Extension v4.0.2
 
-Clinical AI assistant for healthcare practices — 8 workflow tabs running against your local LINUS-AI Medical server. PHI never leaves your network.
+Clinical AI assistant for healthcare practices — 8 workflow tabs running against your local aiMED Medical server. PHI never leaves your network.
 
 - **Chart Summary** — live EMR → clinical brief with HEDIS gaps and HCC flags
 - **Pre-Charter** — PDF/text → 1-page visit brief with trajectory assessment
@@ -259,21 +267,21 @@ Clinical AI assistant for healthcare practices — 8 workflow tabs running again
 - **Quick Tools** — drug interaction, differential diagnosis, prior auth, referral letters
 - **Insurance Verify** — payer portal capture and analysis (30+ payers)
 - **SuggestCare** — evidence-based care gaps with ASCVD, CHA₂DS₂-VASc, CKD-EPI risk scores
-- 14-day free trial — no key required to start
+
+Requires aiMED Medical Server as backend (port 9500). Uses a separate `LNAM-*` license key.
 
 ### Pricing
 
 | Tier | Devices | Price |
 |---|---|---|
+| **90-Day Access** | 2 | $10 one-time or $10/90d |
+| **Extension Only** | 2 | $99 one-time |
 | **Solo Practice** | 2 | $299/yr |
 | **Small Practice** | 10 | $799/yr |
 | **Group Practice** | Unlimited | $1,999/yr |
+| **Health System** | Unlimited | $9,999/yr |
 
-| Buy | Link |
-|---|---|
-| Solo Practice — $299/yr | [Pay $299](https://www.paypal.com/ncp/payment/59YHJD9W2RYYE) |
-| Small Practice — $799/yr | [Pay $799](https://www.paypal.com/ncp/payment/BZPJUT2U5HSMG) |
-| Group Practice — $1,999/yr | [Pay $1,999](https://www.paypal.com/ncp/payment/NHK2TN4D9YV9S) |
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#aimed-ext)** — instant license delivery via PayPal checkout
 
 ### Download
 
@@ -294,31 +302,199 @@ Clinical AI assistant for healthcare practices — 8 workflow tabs running again
 **Firefox:**
 1. Open `about:addons` → gear icon → **Install Add-on From File** → select `.xpi`
 
-After install: open extension → enter your license key in **Settings → Account**.
+After install: open extension → enter your `LNAM-*` license key in **Settings → Account**.
 
 ---
 
-## All Purchase Links
+## LINUS ConnectX
 
-| Product | Tier | Price | Link |
+Private P2P career network — no LinkedIn data mining, no algorithmic suppression, no central servers.
+
+- Encrypted peer-to-peer connections between professionals
+- Direct messaging, project boards, portfolio hosting
+- Runs on your hardware, your data stays yours
+- No ads, no feed algorithms, unlimited connections
+
+### Pricing
+
+| Tier | Price |
+|---|---|
+| **90-Day Access** | $30 one-time or $30/90d |
+| **ConnectX Pro** | $149 one-time |
+| **Enterprise** | $499/yr |
+
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#connectx)** — instant license delivery via PayPal checkout  
+**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+
+---
+
+## LINUS Pulse
+
+Personal AI suite — journal, goals, finances, AI summariser. All offline on your own hardware.
+
+- Journal with AI reflection prompts
+- Daily planner and habit tracker
+- Local finance tracker and expense insights
+- AI summariser and clipboard manager
+- 1-device Solo or 5-device Family license
+
+### Pricing
+
+| Tier | Price |
+|---|---|
+| **90-Day Access** | $10 one-time or $10/90d |
+| **Solo** (1 device) | $49 one-time |
+| **Family** (5 devices) | $99 one-time |
+
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#pulse)** — instant license delivery via PayPal checkout  
+**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+
+---
+
+## LINUS Forge
+
+P2P product studio — build and distribute decentralised apps on the LINUS-AI mesh. No app store gatekeepers.
+
+- Full SDK with visual app builder
+- Peer-to-peer distribution (no centralised hosting)
+- Offline-first storage
+- Built-in LINUS-AI integration hooks
+
+### Pricing
+
+| Tier | Price |
+|---|---|
+| **90-Day Access** | $40 one-time or $40/90d |
+| **Forge Studio** | $199 one-time |
+| **Enterprise** | $799/yr |
+
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#forge)** — instant license delivery via PayPal checkout  
+**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+
+---
+
+## LINUS Trips
+
+AI travel workspace — plan, source, and manage travel with local AI. Offline-first, no cloud required.
+
+- Itinerary builder with AI suggestions
+- Hotel and flight search
+- Expense tracking and trip calendar
+- Buy once, own forever
+
+### Pricing
+
+| Tier | Price |
+|---|---|
+| **90-Day Access** | $20 one-time or $20/90d |
+| **Trips Pro** | $99 one-time |
+| **Enterprise** | $499/yr |
+
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#trips)** — instant license delivery via PayPal checkout  
+**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+
+---
+
+## LINUS Reserve
+
+AI hospitality management — reservations, yield optimiser, no-show prediction, POS integration. No per-cover fees.
+
+- Reservation management with yield optimisation
+- AI-powered no-show prediction
+- POS integration and chat monitor
+- AI booking agent for guest interactions
+- No per-cover or per-booking fees — flat license
+
+### Pricing
+
+| Tier | Price |
+|---|---|
+| **90-Day Access** | $40 one-time or $40/90d |
+| **Reserve Pro** (single venue) | $199 one-time |
+| **Enterprise** (multi-property) | $799/yr |
+
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#reserve)** — instant license delivery via PayPal checkout  
+**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+
+---
+
+## LINUS Day
+
+AI daily planner — learns your rhythms, helps you plan, focus, and reflect. Offline. Private.
+
+- Task management with AI scheduling
+- Daily briefing and focus coach
+- Habit tracker and end-of-day reflection
+- Buy once, own forever
+
+### Pricing
+
+| Tier | Price |
+|---|---|
+| **90-Day Access** | $17 one-time or $17/90d |
+| **Day Perpetual** | $99 one-time |
+
+Optional annual updates: +$49/yr
+
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#day)** — instant license delivery via PayPal checkout  
+**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+
+---
+
+## P2P Network
+
+Private mesh infrastructure — encrypted peer-to-peer routing for teams. No central servers, no cloud relay.
+
+- Up to 10 nodes (Pro) or unlimited (Enterprise)
+- mDNS auto-discovery, private DNS, NAT traversal
+- Encrypted mesh routing between nodes
+- Self-hosted, no external dependencies
+
+### Pricing
+
+| Tier | Price |
+|---|---|
+| **Pro** (10 nodes) | $299 one-time |
+| **Enterprise** (unlimited nodes) | $999/yr |
+
+**→ [Buy at linus-ai.com/store](https://linus-ai.com/store/index.html#p2pnet)** — instant license delivery via PayPal checkout  
+**→ [Download via linus-ai.com/download](https://linus-ai.com/download.html)** — OTP-gated with your license key
+
+---
+
+## Bundles
+
+| Bundle | Includes | Price | Savings |
 |---|---|---|---|
-| LINUS-AI | Community — donate | $39 | [Pay $39](https://www.paypal.com/ncp/payment/CBRE6DSZFP3HU) |
-| LINUS-AI | Professional | $499 one-time | [Pay $499](https://www.paypal.com/ncp/payment/NMFSELLNG7X7U) |
-| LINUS-AI | Team (5 seats) | $1,499 one-time | [Pay $1,499](https://www.paypal.com/ncp/payment/RRHAWGNKDQL5A) |
-| LINUS-AI | Enterprise (unlimited) | $7,999/yr | [Pay $7,999](https://www.paypal.com/ncp/payment/Z5J9RLR3YT6RA) |
-| LINUS-AI | Enterprise Plus (unlimited) | $14,999/yr | [Contact sales](mailto:support@linus-ai.com?subject=Enterprise%20Plus%20Enquiry) |
-| BizCore Desktop | Starter | $199 one-time | [Pay $199](https://www.paypal.com/ncp/payment/RY263RA748ZWY) |
-| BizCore Desktop | Business | $299 one-time | [Pay $299](https://www.paypal.com/ncp/payment/VNFMWHE2UQ9AE) |
-| BizCore Desktop | Unlimited | $599 one-time | [Pay $599](https://www.paypal.com/ncp/payment/57ZWKLYLZ6B3W) |
-| BizCore Extension | Extension-only | $99 one-time | [Pay $99](https://www.paypal.com/ncp/payment/FLRGDB82RZ86E) |
-| LINUS-AI Medical | Clinic (25 users) | $1,499 one-time | [Pay $1,499](https://www.paypal.com/ncp/payment/AK3Q7XPYMMY3S) |
-| LINUS-AI Medical | Hospital (500 users) | $9,999 one-time | [Pay $9,999](https://www.paypal.com/ncp/payment/DAJ5PCGUVGHNW) |
-| LINUS-AI Medical | Health System (Unlimited users) | $99,999 one-time | [Pay $99,999](https://www.paypal.com/ncp/payment/T6TA8NZTNLZ7S) |
-| aiMED Extension | Solo Practice | $299/yr | [Pay $299](https://www.paypal.com/ncp/payment/59YHJD9W2RYYE) |
-| aiMED Extension | Small Practice | $799/yr | [Pay $799](https://www.paypal.com/ncp/payment/BZPJUT2U5HSMG) |
-| aiMED Extension | Group Practice | $1,999/yr | [Pay $1,999](https://www.paypal.com/ncp/payment/NHK2TN4D9YV9S) |
-| aiMED Extension | Health System | $9,999/yr | [Pay $9,999](https://www.paypal.com/ncp/payment/CL6363REEN72E) |
-| Local AI Software | Local AI software | Contact sales | [sales@linus-ai.com](mailto:sales@linus-ai.com) |
+| **aiMED Clinical Bundle** | aiMED Medical (Clinic) + aiMED Extension (Solo 1yr) | $1,439 | Save $359 |
+| **LINUS-AI + BizCore Bundle** | LINUS-AI Pro (perpetual) + BizCore Business (perpetual) | $639 | Save $159 |
+
+**→ [Buy bundles at linus-ai.com/store](https://linus-ai.com/store/index.html#bundles)** — instant license delivery via PayPal checkout
+
+---
+
+## License Activation
+
+All products use the same activation flow. After purchase you receive a license key by email (format: `PPPP-TTTT-XXXX-XXXX-XXXX`).
+
+| Product | Activate |
+|---|---|
+| **LINUS-AI** | `linus-ai --activate LNAI-XXXX-XXXX-XXXX-XXXX` or control panel → Settings → Licence |
+| **BizCore** | App menu → License → Enter Key |
+| **BizCore Extension** | Extension options → License Key |
+| **aiMED Medical** | `POST http://localhost:9500/admin/api/activate` with your `LNMD-*` key |
+| **aiMED Extension** | Extension → Settings → Account → Enter License Key (`LNAM-*`) |
+| **ConnectX / Pulse / Forge** | App → Settings → Activate License (`LNCX-*` / `LNPA-*` / `LNFG-*`) |
+| **Trips / Reserve / Day** | App → Settings → License (`LNTR-*` / `LNRV-*` / `LNDY-*`) |
+| **P2P Network** | App → Settings → License (`LNPN-*`) |
+
+**Lost your key?** → [linus-ai.com/reset](https://linus-ai.com/reset.html) — enter your email to resend all keys instantly.
+
+**Transfer to a new machine?**
+```bash
+linus-ai --deactivate    # on the old machine
+linus-ai --activate LNAI-XXXX-XXXX-XXXX-XXXX    # on the new machine
+```
 
 ---
 
@@ -327,13 +503,8 @@ After install: open extension → enter your license key in **Settings → Accou
 | Contact | Purpose |
 |---|---|
 | [support@linus-ai.com](mailto:support@linus-ai.com) | License delivery, general support (all products) |
-| [sales@linus-ai.com](mailto:sales@linus-ai.com) | Enterprise, Health System, Medical Enterprise pricing |
+| [sales@linus-ai.com](mailto:sales@linus-ai.com) | Enterprise, Health System, custom pricing |
+| [linus-ai.com/support](https://linus-ai.com/support.html) | Troubleshooting knowledge base (54 articles) |
+| [linus-ai.com/enterprise](https://linus-ai.com/enterprise.html) | Enterprise inquiry form |
 
-**License delivery:** within 1 business day after payment confirmation email to support@linus-ai.com.
-
-After receiving your key — activate in the product:
-- **LINUS-AI:** Control panel → Settings → Licence → paste key → Activate
-- **BizCore:** App menu → License → Enter Key
-- **BizCore Extension:** Extension options → License Key
-- **LINUS-AI Medical:** `POST http://localhost:9500/admin/api/activate` with your key
-- **aiMED Extension:** Extension → Settings → Account → Enter License Key
+**License delivery** is automatic — your key arrives by email within minutes of PayPal payment confirmation. If you don't receive it within 15 minutes, check spam or email [support@linus-ai.com](mailto:support@linus-ai.com).
